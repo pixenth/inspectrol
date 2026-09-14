@@ -32,6 +32,26 @@ Invoke-Native 'dotnet publish' {
         -p:DebugType=None -p:DebugSymbols=false
 }
 
+# Portable build: the same files in an "Inspectrol" folder inside a zip, without an installer.
+# Entries are added one by one because ZipFile.CreateFromDirectory on Windows PowerShell 5.1 writes backslashes
+# into entry names, which other unzip tools turn into file names containing "\".
+$portable = Join-Path $artifacts "Inspectrol-$version-portable-win-x64.zip"
+if (Test-Path $portable) { Remove-Item $portable -Force }
+Add-Type -AssemblyName System.IO.Compression, System.IO.Compression.FileSystem
+$zip = [IO.Compression.ZipFile]::Open($portable, [IO.Compression.ZipArchiveMode]::Create)
+try {
+    $level = [IO.Compression.CompressionLevel]::Optimal
+    foreach ($file in Get-ChildItem $publish -Recurse -File) {
+        $entry = 'Inspectrol/' + $file.FullName.Substring($publish.Length + 1).Replace('\', '/')
+        [void][IO.Compression.ZipFileExtensions]::CreateEntryFromFile($zip, $file.FullName, $entry, $level)
+    }
+    [void][IO.Compression.ZipFileExtensions]::CreateEntryFromFile($zip, (Join-Path $root 'LICENSE'), 'Inspectrol/LICENSE.txt', $level)
+}
+finally {
+    $zip.Dispose()
+}
+$released = @($portable)
+
 if (-not $SkipInstaller) {
     $setup = Join-Path $artifacts "Inspectrol-$version-setup.exe"
     Invoke-Native 'makensis' {
@@ -56,4 +76,10 @@ if (-not $SkipInstaller) {
     $json = Join-Path $artifacts 'update.json'
     [IO.File]::WriteAllText($json, ($manifest | ConvertTo-Json), (New-Object Text.UTF8Encoding $false))
     "update.json -> $json"
+    $released += $setup
 }
+
+# Checksums to attach to the release next to the files.
+$sums = $released | ForEach-Object { '{0}  {1}' -f (Get-FileHash $_ -Algorithm SHA256).Hash.ToLowerInvariant(), (Split-Path $_ -Leaf) }
+[IO.File]::WriteAllLines((Join-Path $artifacts 'SHA256SUMS.txt'), [string[]]$sums)
+$released | Get-Item | Select-Object Name, @{ Name = 'MB'; Expression = { [math]::Round($_.Length / 1MB, 1) } }

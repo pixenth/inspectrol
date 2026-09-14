@@ -1294,6 +1294,10 @@
     <value>Вышла новая версия Inspectrol {0}. Обновление займёт пару минут, карту и регистратор оно не затронет.</value>
     <comment>{0}: new program version.</comment>
   </data>
+  <data name="CardPage_UpdateAvailablePortable" xml:space="preserve">
+    <value>Вышла новая версия Inspectrol {0}. Скачайте её там же, где скачивали эту программу.</value>
+    <comment>{0}: new program version.</comment>
+  </data>
   <data name="CardPage_UpdateButton" xml:space="preserve">
     <value>Обновить программу</value>
   </data>

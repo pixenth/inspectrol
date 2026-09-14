@@ -53,7 +53,11 @@ public partial class CardPage : UserControl
     public void OfferUpdate(AppUpdate update)
     {
         _update = update;
-        UpdateText.Text = string.Format(Strings.CardPage_UpdateAvailable, update.Version);
+        // A portable copy cannot be updated by the installer, which would install a second copy elsewhere.
+        UpdateText.Text = string.Format(
+            AboutInfo.IsPortable ? Strings.CardPage_UpdateAvailablePortable : Strings.CardPage_UpdateAvailable,
+            update.Version);
+        UpdateButton.Visibility = AboutInfo.IsPortable ? Visibility.Collapsed : Visibility.Visible;
         UpdateNotice.Visibility = FirstScreenNotice;
     }
 

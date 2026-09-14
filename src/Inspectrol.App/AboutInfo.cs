@@ -1,3 +1,4 @@
+using System.IO;
 using System.Reflection;
 using Inspectrol.Core;
 using Inspectrol.Core.Updates;
@@ -26,6 +27,9 @@ internal static class AboutInfo
     }
 
     public const string UpdateUrl = "https://inspectrol.ru/update";
+
+    // The installer puts Uninstall.exe next to the program; the portable archive has none.
+    public static bool IsPortable => !File.Exists(Path.Combine(AppContext.BaseDirectory, "Uninstall.exe"));
 
     // --update-url=... points the update check at a test server.
     public static Uri? UpdateSource()
