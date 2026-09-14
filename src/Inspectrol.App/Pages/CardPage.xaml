@@ -1,0 +1,133 @@
+<UserControl x:Class="Inspectrol.App.Pages.CardPage"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:controls="clr-namespace:Inspectrol.App.Controls"
+             xmlns:text="clr-namespace:Inspectrol.Core;assembly=Inspectrol.Core">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="0">
+            <TextBlock x:Name="HeaderText" Style="{StaticResource PageHeaderText}" />
+            <TextBlock x:Name="SubheaderText" Margin="0,8,0,0" Style="{StaticResource LeadText}" />
+        </StackPanel>
+
+        <ScrollViewer Grid.Row="1" Margin="0,20,0,16" VerticalScrollBarVisibility="Auto">
+            <StackPanel>
+                <controls:Notice x:Name="UpdateNotice" Margin="0,0,0,12" Visibility="Collapsed">
+                    <StackPanel>
+                        <TextBlock x:Name="UpdateText" TextWrapping="Wrap" />
+                        <Button Margin="0,10,0,0"
+                                HorizontalAlignment="Left"
+                                Click="OnUpdateClick"
+                                Content="{x:Static text:Strings.CardPage_UpdateButton}"
+                                Style="{DynamicResource StepButton}" />
+                    </StackPanel>
+                </controls:Notice>
+
+                <Border Style="{StaticResource Card}">
+                    <DockPanel>
+                        <TextBlock Margin="0,0,16,0"
+                                   DockPanel.Dock="Left"
+                                   FontSize="24"
+                                   Style="{StaticResource Glyph}"
+                                   Text="&#xEDA2;" />
+                        <StackPanel VerticalAlignment="Center">
+                            <TextBlock x:Name="StatusTitle" FontSize="16" FontWeight="SemiBold" TextWrapping="Wrap" />
+                            <TextBlock x:Name="StatusText" Margin="0,4,0,0" Style="{StaticResource SecondaryText}" />
+                            <ProgressBar x:Name="BusyBar" Height="4" Margin="0,12,0,0" IsIndeterminate="True" Visibility="Collapsed" />
+                        </StackPanel>
+                    </DockPanel>
+                </Border>
+
+                <StackPanel x:Name="HowToPanel" Margin="0,16,0,0" Visibility="Collapsed">
+                    <Border Margin="0,0,0,20" Style="{StaticResource Card}">
+                        <Viewbox Height="120" HorizontalAlignment="Center">
+                            <Canvas Width="450" Height="140">
+                                <Path Data="M 20,20 H 52 L 64,32 V 100 H 20 Z" Style="{StaticResource DrawLine}" />
+                                <Path Data="M 29,22 V 36 M 38,22 V 36 M 47,22 V 36" Style="{StaticResource DrawLine}" StrokeThickness="2" />
+                                <TextBlock Canvas.Left="0" Canvas.Top="110" Width="84" FontSize="13" Text="{x:Static text:Strings.CardPage_DrawingCard}" TextAlignment="Center" />
+
+                                <Path Data="M 94,60 H 132 M 122,50 L 132,60 L 122,70" Opacity="0.6" Style="{StaticResource DrawLine}" />
+
+                                <Rectangle Canvas.Left="150" Canvas.Top="36" Width="100" Height="48" RadiusX="8" RadiusY="8" Style="{StaticResource DrawLine}" />
+                                <Rectangle Canvas.Left="166" Canvas.Top="56" Width="42" Height="8" RadiusX="2" RadiusY="2" Style="{StaticResource DrawLine}" StrokeThickness="2" />
+                                <Rectangle Canvas.Left="250" Canvas.Top="49" Width="26" Height="22" Style="{StaticResource DrawLine}" />
+                                <TextBlock Canvas.Left="140" Canvas.Top="110" Width="146" FontSize="13" Text="{x:Static text:Strings.CardPage_DrawingReader}" TextAlignment="Center" />
+
+                                <Path Data="M 296,60 H 334 M 324,50 L 334,60 L 324,70" Opacity="0.6" Style="{StaticResource DrawLine}" />
+
+                                <Rectangle Canvas.Left="352" Canvas.Top="22" Width="84" Height="56" RadiusX="4" RadiusY="4" Style="{StaticResource DrawLine}" />
+                                <Path Data="M 394,78 V 90 M 376,92 H 412" Style="{StaticResource DrawLine}" />
+                                <TextBlock Canvas.Left="344" Canvas.Top="110" Width="100" FontSize="13" Text="{x:Static text:Strings.CardPage_DrawingComputer}" TextAlignment="Center" />
+                            </Canvas>
+                        </Viewbox>
+                    </Border>
+
+                    <controls:NumberedStep Number="1" Title="{x:Static text:Strings.CardPage_HowToTakeOutTitle}" Text="{x:Static text:Strings.CardPage_HowToTakeOutText}" />
+                    <controls:NumberedStep Number="2" Title="{x:Static text:Strings.CardPage_HowToReaderTitle}" Text="{x:Static text:Strings.CardPage_HowToReaderText}" />
+                    <controls:NumberedStep Number="3" Title="{x:Static text:Strings.CardPage_HowToConnectTitle}" Text="{x:Static text:Strings.CardPage_HowToConnectText}" />
+                </StackPanel>
+
+                <controls:Notice x:Name="ResultNotice" Margin="0,12,0,0" Visibility="Collapsed">
+                    <TextBlock x:Name="ResultText" TextWrapping="Wrap" />
+                </controls:Notice>
+
+                <Border x:Name="DeviceCard" Margin="0,12,0,0" Style="{StaticResource Card}" Visibility="Collapsed">
+                    <StackPanel>
+                        <DockPanel>
+                            <TextBlock Margin="0,0,14,0"
+                                       DockPanel.Dock="Left"
+                                       FontSize="22"
+                                       Foreground="{DynamicResource AccentTextFillColorPrimaryBrush}"
+                                       Style="{StaticResource Glyph}"
+                                       Text="&#xE722;" />
+                            <TextBlock x:Name="DeviceTitle" VerticalAlignment="Center" FontSize="19" FontWeight="SemiBold" TextWrapping="Wrap" />
+                        </DockPanel>
+                        <TextBlock x:Name="DeviceFirmware" Margin="0,8,0,0" FontSize="15" TextWrapping="Wrap" />
+                        <TextBlock x:Name="DeviceConfidence" Margin="0,10,0,0" Style="{StaticResource SecondaryText}" />
+
+                        <StackPanel x:Name="FirmwarePanel" Margin="0,16,0,0">
+                            <TextBlock Style="{StaticResource SecondaryText}"
+                                       Text="{x:Static text:Strings.CardPage_FirmwareLabel}" />
+                            <TextBox x:Name="FirmwareBox"
+                                     Width="180"
+                                     Margin="0,8,0,0"
+                                     Padding="10,8"
+                                     HorizontalAlignment="Left"
+                                     FontSize="15"
+                                     TextChanged="OnFirmwareChanged" />
+                            <TextBlock x:Name="FirmwareHint"
+                                       Margin="0,6,0,0"
+                                       Foreground="{DynamicResource SystemFillColorCautionBrush}"
+                                       TextWrapping="Wrap"
+                                       Visibility="Collapsed" />
+                        </StackPanel>
+
+                        <StackPanel x:Name="ConfirmPanel" Margin="0,16,0,0" Visibility="Collapsed">
+                            <TextBlock x:Name="ConfirmQuestion" Style="{StaticResource QuestionText}" />
+                            <TextBlock Margin="0,8,0,0"
+                                       Style="{StaticResource SecondaryText}"
+                                       Text="{x:Static text:Strings.CardPage_ConfirmExplanation}" />
+                        </StackPanel>
+                    </StackPanel>
+                </Border>
+
+                <!--  Below the main content, so it does not push the card and the device off the first screen.  -->
+                <controls:Notice x:Name="UnofficialNotice" Margin="0,12,0,0">
+                    <TextBlock TextWrapping="Wrap"
+                               Text="{x:Static text:Strings.CardPage_UnofficialNotice}" />
+                </controls:Notice>
+            </StackPanel>
+        </ScrollViewer>
+
+        <Border Grid.Row="2" Style="{StaticResource PageFooterDivider}" />
+        <StackPanel Grid.Row="2" Margin="0,18,0,0" HorizontalAlignment="Right" Orientation="Horizontal">
+            <Button x:Name="SecondaryButton" Margin="0,0,12,0" Click="OnButtonClick" Style="{DynamicResource StepButton}" Visibility="Collapsed" />
+            <Button x:Name="PrimaryButton" Click="OnButtonClick" IsDefault="True" Style="{DynamicResource PrimaryStepButton}" Visibility="Collapsed" />
+        </StackPanel>
+    </Grid>
+</UserControl>

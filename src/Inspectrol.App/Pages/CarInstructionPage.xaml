@@ -1,0 +1,44 @@
+<UserControl x:Class="Inspectrol.App.Pages.CarInstructionPage"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:controls="clr-namespace:Inspectrol.App.Controls"
+             xmlns:text="clr-namespace:Inspectrol.Core;assembly=Inspectrol.Core">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="0">
+            <TextBlock x:Name="HeaderText" Style="{StaticResource PageHeaderText}" />
+            <TextBlock x:Name="SubheaderText" Margin="0,8,0,0" Style="{StaticResource LeadText}" />
+        </StackPanel>
+
+        <ScrollViewer Grid.Row="1" Margin="0,20,0,16" VerticalScrollBarVisibility="Auto">
+            <StackPanel>
+                <controls:Notice Kind="Warning">
+                    <TextBlock FontSize="15"
+                               FontWeight="SemiBold"
+                               Text="{x:Static text:Strings.CarInstructionPage_EngineWarning}"
+                               TextWrapping="Wrap" />
+                </controls:Notice>
+
+                <!--  All steps on one sheet, compact so it takes as few photos as possible.  -->
+                <Border Margin="0,4,0,0" Padding="16,2" Style="{StaticResource Card}">
+                    <StackPanel x:Name="StepsPanel" />
+                </Border>
+
+                <controls:Notice x:Name="SavedNotice" Margin="0,12,0,0" Visibility="Collapsed">
+                    <TextBlock x:Name="SavedText" FontSize="15" TextWrapping="Wrap" />
+                </controls:Notice>
+            </StackPanel>
+        </ScrollViewer>
+
+        <Border Grid.Row="2" Style="{StaticResource PageFooterDivider}" />
+        <StackPanel Grid.Row="2" Margin="0,18,0,0" HorizontalAlignment="Right" Orientation="Horizontal">
+            <Button x:Name="SecondaryButton" Margin="0,0,12,0" Click="OnButtonClick" Style="{DynamicResource StepButton}" />
+            <Button x:Name="PrimaryButton" Click="OnButtonClick" Style="{DynamicResource PrimaryStepButton}" />
+        </StackPanel>
+    </Grid>
+</UserControl>

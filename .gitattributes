@@ -1,0 +1,2 @@
+# Saved site pages used by the parser tests keep their line endings.
+tests/Inspectrol.Tests/Fixtures/** -text

@@ -1,0 +1,48 @@
+<UserControl x:Class="Inspectrol.App.Pages.AppUpdatePage"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:controls="clr-namespace:Inspectrol.App.Controls"
+             xmlns:text="clr-namespace:Inspectrol.Core;assembly=Inspectrol.Core">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="0">
+            <TextBlock x:Name="HeaderText" Style="{StaticResource PageHeaderText}" />
+            <TextBlock x:Name="SubheaderText" Margin="0,8,0,0" Style="{StaticResource LeadText}" />
+        </StackPanel>
+
+        <ScrollViewer Grid.Row="1" Margin="0,20,0,16" VerticalScrollBarVisibility="Auto">
+            <StackPanel>
+                <Border x:Name="NotesCard" Margin="0,0,0,12" Style="{StaticResource Card}">
+                    <StackPanel>
+                        <TextBlock FontSize="15" FontWeight="SemiBold" Text="{x:Static text:Strings.UpdatePage_NotesTitle}" />
+                        <TextBlock x:Name="NotesText" Margin="0,6,0,0" TextWrapping="Wrap" />
+                    </StackPanel>
+                </Border>
+
+                <Border x:Name="ProgressCard" Margin="0,0,0,12" Style="{StaticResource Card}" Visibility="Collapsed">
+                    <StackPanel>
+                        <TextBlock x:Name="StatusText" FontSize="15" TextWrapping="Wrap" />
+                        <ProgressBar x:Name="DownloadBar" Height="10" Margin="0,10,0,0" Maximum="100" />
+                    </StackPanel>
+                </Border>
+
+                <controls:Notice x:Name="ResultNotice" Visibility="Collapsed">
+                    <TextBlock x:Name="ResultText" TextWrapping="Wrap" />
+                </controls:Notice>
+
+                <TextBlock Style="{StaticResource SecondaryText}" Text="{x:Static text:Strings.UpdatePage_Safety}" TextWrapping="Wrap" />
+            </StackPanel>
+        </ScrollViewer>
+
+        <Border Grid.Row="2" Style="{StaticResource PageFooterDivider}" />
+        <StackPanel Grid.Row="2" Margin="0,18,0,0" HorizontalAlignment="Right" Orientation="Horizontal">
+            <Button x:Name="SecondaryButton" Margin="0,0,12,0" Click="OnButtonClick" Style="{DynamicResource StepButton}" Visibility="Collapsed" />
+            <Button x:Name="PrimaryButton" Click="OnButtonClick" IsDefault="True" Style="{DynamicResource PrimaryStepButton}" Visibility="Collapsed" />
+        </StackPanel>
+    </Grid>
+</UserControl>

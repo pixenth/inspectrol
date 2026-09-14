@@ -1,0 +1,12 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/Inspectrol.App/Inspectrol.App.csproj" />
+    <Project Path="src/Inspectrol.Core/Inspectrol.Core.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/Inspectrol.Tests/Inspectrol.Tests.csproj" />
+  </Folder>
+  <Folder Name="/tools/">
+    <Project Path="tools/Inspectrol.Cli/Inspectrol.Cli.csproj" />
+  </Folder>
+</Solution>

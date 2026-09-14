@@ -1,0 +1,1487 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Common_Next" xml:space="preserve">
+    <value>Дальше</value>
+  </data>
+  <data name="Common_Back" xml:space="preserve">
+    <value>Назад</value>
+  </data>
+  <data name="Common_TryAgain" xml:space="preserve">
+    <value>Попробовать ещё раз</value>
+  </data>
+  <data name="Common_RecordingForms" xml:space="preserve">
+    <value>запись;записи;записей</value>
+    <comment>Forms of the noun for 1, for 2 to 4, and for 5 or more, separated by semicolons.</comment>
+  </data>
+  <data name="App_CrashLogFileName" xml:space="preserve">
+    <value>ошибка.txt</value>
+  </data>
+  <data name="App_CrashMessage" xml:space="preserve">
+    <value>В программе произошла ошибка, и она закроется.&#10;&#10;{0}&#10;&#10;Подробности записаны в файл:&#10;{1}</value>
+    <comment>{0}: exception message. {1}: full path of the crash log file.</comment>
+  </data>
+  <data name="AboutInfo_Author" xml:space="preserve">
+    <value>Павел Акуличев</value>
+  </data>
+  <data name="AboutInfo_Footer" xml:space="preserve">
+    <value>{0} {1}   ·   © {2} {3}   ·   Свободная программа под лицензией {4}</value>
+    <comment>{0}: program name. {1}: version, e.g. 0.1.0. {2}: year of the first release. {3}: author name. {4}: license id, e.g. GPL-3.0.</comment>
+  </data>
+  <data name="MainWindow_Title" xml:space="preserve">
+    <value>Inspectrol: обновление регистратора Inspector</value>
+  </data>
+  <data name="MainWindow_AppSubtitle" xml:space="preserve">
+    <value>Обновление регистраторов Inspector</value>
+  </data>
+  <data name="MainWindow_StepCounter" xml:space="preserve">
+    <value>Шаг {0} из {1}</value>
+    <comment>{0}: current step number. {1}: number of steps.</comment>
+  </data>
+  <data name="MainWindow_PassDetail" xml:space="preserve">
+    <value>Заход с картой {0} из {1}</value>
+    <comment>Shown under the current step. {0}: current card pass number. {1}: number of card passes.</comment>
+  </data>
+  <data name="MainWindow_QuestionDetail" xml:space="preserve">
+    <value>Вопрос {0} из {1}</value>
+    <comment>Shown under the current step. {0}: question number, starting at 1. {1}: number of questions.</comment>
+  </data>
+  <data name="MainWindow_StepCard" xml:space="preserve">
+    <value>Регистратор</value>
+  </data>
+  <data name="MainWindow_StepPlan" xml:space="preserve">
+    <value>Что обновить</value>
+  </data>
+  <data name="MainWindow_StepDownload" xml:space="preserve">
+    <value>Скачивание</value>
+  </data>
+  <data name="MainWindow_StepRecordings" xml:space="preserve">
+    <value>Записи с карты</value>
+  </data>
+  <data name="MainWindow_StepWrite" xml:space="preserve">
+    <value>Запись на карту</value>
+  </data>
+  <data name="MainWindow_StepInCar" xml:space="preserve">
+    <value>Обновление в машине</value>
+  </data>
+  <data name="MainWindow_StepFinish" xml:space="preserve">
+    <value>Итог</value>
+  </data>
+  <data name="MainWindow_NothingChangedYet" xml:space="preserve">
+    <value>Обновление не закончено. Карта и регистратор пока не менялись, так что потом можно будет начать сначала.</value>
+  </data>
+  <data name="MainWindow_DeviceIsUpdating" xml:space="preserve">
+    <value>Если закрыть программу, обновление внутри регистратора не прервётся, но подсказок, что делать дальше, больше не будет.</value>
+  </data>
+  <data name="MainWindow_ChainNotFinished" xml:space="preserve">
+    <value>Остался ещё заход с картой. Если закрыть программу, регистратор останется на промежуточной прошивке. Пользоваться им можно. Чтобы закончить, запустите программу ещё раз.</value>
+  </data>
+  <data name="MainWindow_InstructionNotTaken" xml:space="preserve">
+    <value>Файлы на карту записаны, регистратор пока не трогали. Если закрыть программу, инструкция для машины пропадёт с экрана: сначала сфотографируйте её или сохраните в файл.</value>
+  </data>
+  <data name="MainWindow_BusyTitle" xml:space="preserve">
+    <value>Подождите, программа занята</value>
+  </data>
+  <data name="MainWindow_CloseQuestion" xml:space="preserve">
+    <value>{0}&#10;&#10;Закрыть программу?</value>
+    <comment>{0}: what happens to the card and the dashcam if the program is closed on this step.</comment>
+  </data>
+  <data name="CardPage_DefaultHeader" xml:space="preserve">
+    <value>Вставьте карту памяти из регистратора</value>
+  </data>
+  <data name="CardPage_DefaultSubheader" xml:space="preserve">
+    <value>По записям на карте программа определит модель регистратора и версию прошивки.</value>
+  </data>
+  <data name="CardPage_UnofficialNotice" xml:space="preserve">
+    <value>Inspectrol - это неофициальная и некоммерческая программа, которая помогает установить ПО для видеорегистратора с официального сайта Inspector. Она не связана с производителем видеорегистраторов.</value>
+  </data>
+  <data name="CardPage_FirmwareLabel" xml:space="preserve">
+    <value>Версия прошивки:</value>
+  </data>
+  <data name="CardPage_ConfirmExplanation" xml:space="preserve">
+    <value>От этого числа зависит, какие обновления можно ставить. Если оно неверное, программа может предложить неподходящую прошивку.</value>
+  </data>
+  <data name="CardPage_ChosenByHandHeader" xml:space="preserve">
+    <value>Вы выбрали регистратор</value>
+  </data>
+  <data name="CardPage_ChosenByHandSubheader" xml:space="preserve">
+    <value>Осталось вписать, какая прошивка стоит в нём сейчас.</value>
+  </data>
+  <data name="CardPage_ChosenFromList" xml:space="preserve">
+    <value>Модель выбрана из списка</value>
+  </data>
+  <data name="CardPage_CheckStickerSimilarModels" xml:space="preserve">
+    <value>Сверьте название с наклейкой на регистраторе. У похожих моделей разные обновления.</value>
+  </data>
+  <data name="CardPage_ChooseAnotherModel" xml:space="preserve">
+    <value>Выбрать другую модель</value>
+  </data>
+  <data name="CardPage_SearchingTitle" xml:space="preserve">
+    <value>Ищем карту памяти…</value>
+  </data>
+  <data name="CardPage_SearchingText" xml:space="preserve">
+    <value>Проверяем съёмные диски.</value>
+  </data>
+  <data name="CardPage_NotFoundTitle" xml:space="preserve">
+    <value>Карта памяти не найдена</value>
+  </data>
+  <data name="CardPage_NotFoundText" xml:space="preserve">
+    <value>Сделайте всё по порядку, как показано ниже. Нажимать ничего не нужно, карта появится здесь сама.</value>
+  </data>
+  <data name="CardPage_DrawingCard" xml:space="preserve">
+    <value>Карта памяти</value>
+  </data>
+  <data name="CardPage_DrawingReader" xml:space="preserve">
+    <value>Картридер</value>
+  </data>
+  <data name="CardPage_DrawingComputer" xml:space="preserve">
+    <value>Компьютер</value>
+  </data>
+  <data name="CardPage_HowToTakeOutTitle" xml:space="preserve">
+    <value>Выньте карту из регистратора</value>
+  </data>
+  <data name="CardPage_HowToTakeOutText" xml:space="preserve">
+    <value>Когда регистратор выключен, нажмите на карту ногтем: она щёлкнет и немного выдвинется. Потяните её наружу.</value>
+  </data>
+  <data name="CardPage_HowToReaderTitle" xml:space="preserve">
+    <value>Вставьте карту в картридер</value>
+  </data>
+  <data name="CardPage_HowToReaderText" xml:space="preserve">
+    <value>Картридером называют переходник для карт памяти. Карта входит в него только одной стороной, не давите с силой. Если в компьютере есть свой разъём для карт, можно вставить карту прямо в него.</value>
+  </data>
+  <data name="CardPage_HowToConnectTitle" xml:space="preserve">
+    <value>Подключите картридер к компьютеру</value>
+  </data>
+  <data name="CardPage_HowToConnectText" xml:space="preserve">
+    <value>Вставьте его в любой USB-разъём компьютера или ноутбука. Программа сама заметит карту.</value>
+  </data>
+  <data name="CardPage_SeveralDashcamCardsTitle" xml:space="preserve">
+    <value>К компьютеру подключено несколько карт с записями</value>
+  </data>
+  <data name="CardPage_SeveralDashcamCardsText" xml:space="preserve">
+    <value>Найдено карт с записями: {0} ({1}). На следующих шагах карту сотрут, поэтому выбирать наугад нельзя. Оставьте подключённой только карту из регистратора. Нажимать ничего не нужно.</value>
+    <comment>{0}: number of cards with recordings. {1}: comma-separated drive names, e.g. E:, F:.</comment>
+  </data>
+  <data name="CardPage_SeveralDrivesTitle" xml:space="preserve">
+    <value>К компьютеру подключено несколько съёмных дисков</value>
+  </data>
+  <data name="CardPage_SeveralDrivesText" xml:space="preserve">
+    <value>Найдено съёмных дисков: {0} ({1}). На следующих шагах карту сотрут, поэтому выбирать наугад нельзя. Оставьте подключённой только карту из регистратора. Нажимать ничего не нужно.</value>
+    <comment>{0}: number of removable drives. {1}: comma-separated drive names, e.g. E:, F:.</comment>
+  </data>
+  <data name="CardPage_OtherFilesTitle" xml:space="preserve">
+    <value>На диске {0} ({1} ГБ) нет записей регистратора, но есть другие файлы</value>
+    <comment>{0}: drive name, e.g. F:. {1}: drive size in GB.</comment>
+  </data>
+  <data name="CardPage_OtherFilesText" xml:space="preserve">
+    <value>Проверьте, что это карта из регистратора. Диск с посторонними файлами, например флешку с фотографиями, программа стирать не станет.</value>
+  </data>
+  <data name="CardPage_ReadingTitle" xml:space="preserve">
+    <value>Читаем карту {0} ({1} ГБ)…</value>
+    <comment>{0}: drive name, e.g. F:. {1}: card size in GB.</comment>
+  </data>
+  <data name="CardPage_ReadingText" xml:space="preserve">
+    <value>Смотрим записи и загружаем список моделей с сайта Inspector.</value>
+  </data>
+  <data name="CardPage_NoConnectionTitle" xml:space="preserve">
+    <value>Нет связи с сайтом Inspector</value>
+  </data>
+  <data name="CardPage_NoConnectionText" xml:space="preserve">
+    <value>Проверьте, что компьютер подключён к интернету, и нажмите «Попробовать ещё раз». Список обновлений программа берёт с сайта.</value>
+  </data>
+  <data name="CardPage_CardTitle" xml:space="preserve">
+    <value>Карта {0} на {1} ГБ</value>
+    <comment>{0}: drive name, e.g. F:. {1}: card size in GB.</comment>
+  </data>
+  <data name="CardPage_CardRead" xml:space="preserve">
+    <value>Карта прочитана. Ничего на ней не менялось.</value>
+  </data>
+  <data name="CardPage_NotRecognisedHeader" xml:space="preserve">
+    <value>Не получилось узнать регистратор по карте</value>
+  </data>
+  <data name="CardPage_ChooseFromList" xml:space="preserve">
+    <value>Выбрать модель из списка</value>
+  </data>
+  <data name="CardPage_RecognisedHeader" xml:space="preserve">
+    <value>Это ваш регистратор?</value>
+  </data>
+  <data name="CardPage_RecognisedFromUpdateFiles" xml:space="preserve">
+    <value>Записей на карте нет, зато есть файлы обновления для этой модели. Похоже, карту уже готовили к обновлению. Сверьте название с наклейкой на регистраторе.</value>
+  </data>
+  <data name="CardPage_RecognisedFromRecordings" xml:space="preserve">
+    <value>Программа узнала его по записям на карте. Сверьте название с наклейкой на регистраторе.</value>
+  </data>
+  <data name="CardPage_CurrentFirmware" xml:space="preserve">
+    <value>Сейчас в нём прошивка {0}</value>
+    <comment>{0}: firmware version, e.g. 1.0.3.</comment>
+  </data>
+  <data name="CardPage_NoVersionInUpdateFiles" xml:space="preserve">
+    <value>По файлам на карте версию прошивки не узнать</value>
+  </data>
+  <data name="CardPage_NoVersionInRecordings" xml:space="preserve">
+    <value>По записям версию прошивки не узнать</value>
+  </data>
+  <data name="CardPage_LookUpVersion" xml:space="preserve">
+    <value>Посмотрите версию прошивки в последнем пункте меню регистратора и впишите её ниже.</value>
+  </data>
+  <data name="CardPage_LookUpVersionAfterUpdate" xml:space="preserve">
+    <value> Если регистратор уже обновлялся с этой карты, там будет новая версия.</value>
+    <comment>Appended to CardPage_LookUpVersion; starts with a space.</comment>
+  </data>
+  <data name="CardPage_ModelVerified" xml:space="preserve">
+    <value>Эту модель уже проверяли на настоящем регистраторе.</value>
+  </data>
+  <data name="CardPage_VersionMayDiffer" xml:space="preserve">
+    <value>Если версия в последнем пункте меню регистратора другая, впишите ту, что там.</value>
+  </data>
+  <data name="CardPage_YesThisIsIt" xml:space="preserve">
+    <value>Да, это он</value>
+  </data>
+  <data name="CardPage_NoChooseFromList" xml:space="preserve">
+    <value>Нет, выбрать из списка</value>
+  </data>
+  <data name="CardPage_InsertCardBackTitle" xml:space="preserve">
+    <value>Вставьте карту обратно в компьютер</value>
+  </data>
+  <data name="CardPage_SeveralCardsTitle" xml:space="preserve">
+    <value>К компьютеру подключено несколько карт</value>
+  </data>
+  <data name="CardPage_InsertCardBackText" xml:space="preserve">
+    <value>Выньте карту из регистратора и вставьте её в компьютер. Программа увидит её сама.</value>
+  </data>
+  <data name="CardPage_LeaveOneCardText" xml:space="preserve">
+    <value>Оставьте подключённой только карту из регистратора.</value>
+  </data>
+  <data name="CardPage_DifferentCardTitle" xml:space="preserve">
+    <value>Похоже, это другая карта</value>
+  </data>
+  <data name="CardPage_DifferentCardText" xml:space="preserve">
+    <value>В прошлом заходе была карта на {0:0.#} ГБ, а сейчас вставлена карта на {1} ГБ. Вставьте карту, которая стояла в регистраторе.</value>
+    <comment>{0}: size of the card from the previous pass in GB (a number). {1}: size of the inserted card in GB, already formatted.</comment>
+  </data>
+  <data name="CardPage_ContinueHeader" xml:space="preserve">
+    <value>Продолжаем обновление</value>
+  </data>
+  <data name="CardPage_ContinueSubheader" xml:space="preserve">
+    <value>Модель и версия прошивки остались с прошлого захода.</value>
+  </data>
+  <data name="CardPage_CardBackInComputer" xml:space="preserve">
+    <value>Карта снова в компьютере.</value>
+  </data>
+  <data name="CardPage_EnterVersionFromMenu" xml:space="preserve">
+    <value>Впишите версию прошивки из последнего пункта меню регистратора</value>
+  </data>
+  <data name="CardPage_VersionSeenAfterPass" xml:space="preserve">
+    <value>Эту версию вы видели в меню регистратора после прошлого захода.</value>
+  </data>
+  <data name="CardPage_CheckVersionHeader" xml:space="preserve">
+    <value>Проверьте версию прошивки</value>
+  </data>
+  <data name="CardPage_ConfirmVersionQuestion" xml:space="preserve">
+    <value>В последнем пункте меню регистратора написано {0}?</value>
+    <comment>{0}: firmware version typed by the user, e.g. 1.0.4.</comment>
+  </data>
+  <data name="CardPage_YesCorrect" xml:space="preserve">
+    <value>Да, всё верно</value>
+  </data>
+  <data name="CardPage_NoCorrectIt" xml:space="preserve">
+    <value>Нет, исправить</value>
+  </data>
+  <data name="CardPage_EnterVersionHint" xml:space="preserve">
+    <value>Впишите версию прошивки, чтобы продолжить.</value>
+  </data>
+  <data name="CardPage_VersionFormatHint" xml:space="preserve">
+    <value>Версия пишется числами через точку или запятую, например 1.2.5.</value>
+  </data>
+  <data name="CardPage_LookAgain" xml:space="preserve">
+    <value>Искать заново</value>
+  </data>
+  <data name="ModelPickerPage_Header" xml:space="preserve">
+    <value>Какой у вас регистратор?</value>
+  </data>
+  <data name="ModelPickerPage_Lead" xml:space="preserve">
+    <value>Название написано на наклейке регистратора. Начните вводить его, и список сократится.</value>
+  </data>
+  <data name="ModelPickerPage_ThisIsMyModel" xml:space="preserve">
+    <value>Это моя модель</value>
+  </data>
+  <data name="ModelPickerPage_NoCardUpdates" xml:space="preserve">
+    <value>Обновляется без карты памяти. Такие модели программа пока не поддерживает.</value>
+  </data>
+  <data name="ModelPickerPage_DatabaseAndFirmware" xml:space="preserve">
+    <value>Есть база камер и прошивка</value>
+  </data>
+  <data name="ModelPickerPage_DatabaseOnly" xml:space="preserve">
+    <value>Есть только база камер</value>
+  </data>
+  <data name="ModelPickerPage_FirmwareOnly" xml:space="preserve">
+    <value>Есть только прошивка</value>
+  </data>
+  <data name="PlanPage_ConsentEngine" xml:space="preserve">
+    <value>Я заведу двигатель заранее и не заглушу его, пока обновление не закончится.</value>
+  </data>
+  <data name="PlanPage_ConsentKeepCard" xml:space="preserve">
+    <value>Я не выну карту из регистратора, пока он не закончит все перезагрузки.</value>
+  </data>
+  <data name="PlanPage_ConsentModelName" xml:space="preserve">
+    <value>Название модели на наклейке регистратора совпадает с выбранным.</value>
+  </data>
+  <data name="PlanPage_ConsentReset" xml:space="preserve">
+    <value>Я понимаю, что после обновления нужно будет сделать сброс настроек.</value>
+  </data>
+  <data name="PlanPage_ConsentChain" xml:space="preserve">
+    <value>Я понимаю, что карту придётся носить к регистратору несколько раз подряд.</value>
+  </data>
+  <data name="PlanPage_ConsentHeader" xml:space="preserve">
+    <value>Прежде чем менять прошивку, подтвердите каждый пункт</value>
+  </data>
+  <data name="PlanPage_ConsentRisk" xml:space="preserve">
+    <value>Если обновление прошивки прервётся, регистратор может перестать работать.</value>
+  </data>
+  <data name="PlanPage_Subheader" xml:space="preserve">
+    <value>{0}, сейчас прошивка {1}</value>
+    <comment>{0}: model name. {1}: current firmware version.</comment>
+  </data>
+  <data name="PlanPage_LoadingHeader" xml:space="preserve">
+    <value>Загружаем обновления для вашей модели…</value>
+  </data>
+  <data name="PlanPage_CannotUpdateHeader" xml:space="preserve">
+    <value>Обновить эту модель не получится</value>
+  </data>
+  <data name="PlanPage_NoConnectionHeader" xml:space="preserve">
+    <value>Нет связи с сайтом Inspector</value>
+  </data>
+  <data name="PlanPage_NoConnectionText" xml:space="preserve">
+    <value>Проверьте, что компьютер подключён к интернету, и нажмите «Попробовать ещё раз».</value>
+  </data>
+  <data name="PlanPage_Header" xml:space="preserve">
+    <value>Что будем обновлять?</value>
+  </data>
+  <data name="PlanPage_DatabaseTitle" xml:space="preserve">
+    <value>База камер</value>
+  </data>
+  <data name="PlanPage_DatabaseText" xml:space="preserve">
+    <value>Камеры и радары на дорогах. Прошивка регистратора не меняется.</value>
+  </data>
+  <data name="PlanPage_FirmwareTitle" xml:space="preserve">
+    <value>Прошивка</value>
+  </data>
+  <data name="PlanPage_FirmwareText" xml:space="preserve">
+    <value>Программа внутри регистратора. Новая версия {0}.</value>
+    <comment>{0}: latest firmware version.</comment>
+  </data>
+  <data name="PlanPage_FirmwareTextNoVersion" xml:space="preserve">
+    <value>Программа внутри регистратора.</value>
+  </data>
+  <data name="PlanPage_EMapTitle" xml:space="preserve">
+    <value>Карты eMap</value>
+  </data>
+  <data name="PlanPage_EMapText" xml:space="preserve">
+    <value>Карты дорог для экрана регистратора. Это большой файл, скачивание займёт время.</value>
+  </data>
+  <data name="PlanPage_PlanTitle" xml:space="preserve">
+    <value>Что запишется на карту</value>
+  </data>
+  <data name="PlanPage_SiteWarningCaption" xml:space="preserve">
+    <value>Предупреждение с сайта Inspector:</value>
+  </data>
+  <data name="PlanPage_PassOfPasses" xml:space="preserve">
+    <value>Заход с картой {0} из {1}: {2}</value>
+    <comment>{0}: card pass number. {1}: number of card passes. {2}: what the pass installs.</comment>
+  </data>
+  <data name="PlanPage_ChooseHint" xml:space="preserve">
+    <value>Отметьте, что обновить.</value>
+  </data>
+  <data name="PlanPage_CheckAllHint" xml:space="preserve">
+    <value>Отметьте все пункты, чтобы продолжить.</value>
+  </data>
+  <data name="DownloadPage_Header" xml:space="preserve">
+    <value>Скачиваем файлы обновления</value>
+  </data>
+  <data name="DownloadPage_Subheader" xml:space="preserve">
+    <value>{0}. Файлы скачиваются с сервера Inspector и проверяются. Карта пока не меняется.</value>
+    <comment>{0}: what the current card pass installs.</comment>
+  </data>
+  <data name="DownloadPage_DownloadsFolderName" xml:space="preserve">
+    <value>Загрузки</value>
+  </data>
+  <data name="DownloadPage_FailedHeader" xml:space="preserve">
+    <value>Скачать удалось не всё</value>
+  </data>
+  <data name="DownloadPage_FailedText" xml:space="preserve">
+    <value>Карта не менялась. Проверьте, что компьютер подключён к интернету, и нажмите «Попробовать ещё раз».</value>
+  </data>
+  <data name="DownloadPage_DoneHeader" xml:space="preserve">
+    <value>Файлы скачаны и проверены</value>
+  </data>
+  <data name="DownloadPage_DoneText" xml:space="preserve">
+    <value>Файлы целые. Карта пока не менялась.</value>
+  </data>
+  <data name="DownloadPage_Progress" xml:space="preserve">
+    <value>Скачано {0:P0}</value>
+    <comment>{0}: downloaded fraction from 0 to 1.</comment>
+  </data>
+  <data name="DownloadPage_Checking" xml:space="preserve">
+    <value>Скачан, проверяем содержимое…</value>
+  </data>
+  <data name="DownloadPage_FileIntact" xml:space="preserve">
+    <value>Файл целый.</value>
+  </data>
+  <data name="DownloadPage_FileFailed" xml:space="preserve">
+    <value>Не удалось скачать файл.</value>
+  </data>
+  <data name="DownloadPage_Downloading" xml:space="preserve">
+    <value>Скачивание…</value>
+  </data>
+  <data name="DownloadPage_FileNumber" xml:space="preserve">
+    <value>Файл {0} из {1}</value>
+    <comment>{0}: file number, starting at 1. {1}: number of files.</comment>
+  </data>
+  <data name="RecordingsPage_Header" xml:space="preserve">
+    <value>Сохранить записи с карты?</value>
+  </data>
+  <data name="RecordingsPage_ChoiceExplanation" xml:space="preserve">
+    <value>Потом программа очистит карту, и записи с неё удалятся. Выберите, что сохранить на компьютер.</value>
+  </data>
+  <data name="RecordingsPage_RangeTitle" xml:space="preserve">
+    <value>За какие дни сохранить</value>
+  </data>
+  <data name="RecordingsPage_RangeFrom" xml:space="preserve">
+    <value>с </value>
+    <comment>Label before the start date picker; ends with a space.</comment>
+  </data>
+  <data name="RecordingsPage_RangeTo" xml:space="preserve">
+    <value>по </value>
+    <comment>Label before the end date picker; ends with a space.</comment>
+  </data>
+  <data name="RecordingsPage_SkipTitle" xml:space="preserve">
+    <value>Восстановить записи будет нельзя</value>
+  </data>
+  <data name="RecordingsPage_SkipConsent" xml:space="preserve">
+    <value>Записи с этой карты мне не нужны.</value>
+  </data>
+  <data name="RecordingsPage_FolderTitle" xml:space="preserve">
+    <value>Записи сохранятся в папку</value>
+  </data>
+  <data name="RecordingsPage_ChooseFolder" xml:space="preserve">
+    <value>Выбрать другую папку</value>
+  </data>
+  <data name="RecordingsPage_OpenFolder" xml:space="preserve">
+    <value>Открыть папку с записями</value>
+  </data>
+  <data name="RecordingsPage_CopyingBusy" xml:space="preserve">
+    <value>Программа копирует записи с карты на компьютер. Если закрыть её сейчас, часть записей не сохранится. Дождитесь конца.</value>
+  </data>
+  <data name="RecordingsPage_NoRecordingsHeader" xml:space="preserve">
+    <value>Записей на карте нет</value>
+  </data>
+  <data name="RecordingsPage_NothingToSave" xml:space="preserve">
+    <value>Сохранять нечего.</value>
+  </data>
+  <data name="RecordingsPage_Summary" xml:space="preserve">
+    <value>На карте {0} на {1}, с {2:dd.MM.yyyy} по {3:dd.MM.yyyy}.</value>
+    <comment>{0}: number of recordings with the noun, e.g. 36 записей. {1}: total size. {2}: oldest recording date. {3}: newest recording date.</comment>
+  </data>
+  <data name="RecordingsPage_Continue" xml:space="preserve">
+    <value>Продолжить</value>
+  </data>
+  <data name="RecordingsPage_CardMissingHeader" xml:space="preserve">
+    <value>Карта пропала из компьютера</value>
+  </data>
+  <data name="RecordingsPage_CardMissingText" xml:space="preserve">
+    <value>Вставьте карту обратно в тот же разъём и нажмите «Карта на месте».</value>
+  </data>
+  <data name="RecordingsPage_CardIsBack" xml:space="preserve">
+    <value>Карта на месте</value>
+  </data>
+  <data name="RecordingsPage_SaveAllTitle" xml:space="preserve">
+    <value>Сохранить все записи</value>
+  </data>
+  <data name="RecordingsPage_LastDayTitle" xml:space="preserve">
+    <value>Сохранить только последний записанный день</value>
+  </data>
+  <data name="RecordingsPage_RangeOptionTitle" xml:space="preserve">
+    <value>Выбрать, за какие дни сохранить</value>
+  </data>
+  <data name="RecordingsPage_RangeOptionNote" xml:space="preserve">
+    <value>Понадобится указать промежуток дат.</value>
+  </data>
+  <data name="RecordingsPage_SaveNothingTitle" xml:space="preserve">
+    <value>Не сохранять ничего</value>
+  </data>
+  <data name="RecordingsPage_SaveNothingNote" xml:space="preserve">
+    <value>Записи с карты удалятся.</value>
+  </data>
+  <data name="RecordingsPage_ContinueWithoutSaving" xml:space="preserve">
+    <value>Дальше, без сохранения</value>
+  </data>
+  <data name="RecordingsPage_SaveRecordings" xml:space="preserve">
+    <value>Сохранить записи</value>
+  </data>
+  <data name="RecordingsPage_NoRecordingsInRange" xml:space="preserve">
+    <value>За эти дни записей нет.</value>
+  </data>
+  <data name="RecordingsPage_ChooseHint" xml:space="preserve">
+    <value>Выберите, что сохранить.</value>
+  </data>
+  <data name="RecordingsPage_SkipHint" xml:space="preserve">
+    <value>Отметьте, что записи не нужны, чтобы продолжить.</value>
+  </data>
+  <data name="RecordingsPage_RangeHint" xml:space="preserve">
+    <value>Выберите дни, за которые есть записи.</value>
+  </data>
+  <data name="RecordingsPage_FolderDialogTitle" xml:space="preserve">
+    <value>Куда сохранить записи</value>
+  </data>
+  <data name="RecordingsPage_Copying" xml:space="preserve">
+    <value>Копируем {0} в папку «{1}». Карту не вынимайте.</value>
+    <comment>{0}: number of recordings with the noun, e.g. 36 записей. {1}: target folder path.</comment>
+  </data>
+  <data name="RecordingsPage_CopyProgress" xml:space="preserve">
+    <value>Скопировано {0:P0}</value>
+    <comment>{0}: copied fraction from 0 to 1.</comment>
+  </data>
+  <data name="RecordingsPage_SavedHeader" xml:space="preserve">
+    <value>Записи сохранены</value>
+  </data>
+  <data name="RecordingsPage_CardNotChangedYet" xml:space="preserve">
+    <value>Карта пока не менялась.</value>
+  </data>
+  <data name="RecordingsPage_Saved" xml:space="preserve">
+    <value>Сохранено {0} в папку «{1}».</value>
+    <comment>{0}: number of recordings with the noun, e.g. 36 записей. {1}: target folder path.</comment>
+  </data>
+  <data name="RecordingsPage_SaveFailedHeader" xml:space="preserve">
+    <value>Сохранить записи не получилось</value>
+  </data>
+  <data name="RecordingsPage_SaveFailed" xml:space="preserve">
+    <value>{0} Карта не менялась.</value>
+    <comment>{0}: error message from the copy operation.</comment>
+  </data>
+  <data name="RecordingsPage_OpenFolderFailed" xml:space="preserve">
+    <value> Открыть папку не получилось. Она лежит в папке «Видео».</value>
+    <comment>Appended to the result text; starts with a space. «Видео» is the Windows Videos folder.</comment>
+  </data>
+  <data name="RecordingsPage_FolderName" xml:space="preserve">
+    <value>Записи Inspector {0:yyyy-MM-dd}</value>
+    <comment>Name of the folder created for saved recordings. {0}: today's date.</comment>
+  </data>
+  <data name="RecordingsPage_TimeUnderMinute" xml:space="preserve">
+    <value>меньше минуты</value>
+  </data>
+  <data name="RecordingsPage_TimeMinutes" xml:space="preserve">
+    <value>примерно {0} мин</value>
+    <comment>{0}: estimated copy time in whole minutes.</comment>
+  </data>
+  <data name="RecordingsPage_TimeHours" xml:space="preserve">
+    <value>примерно {0} ч</value>
+    <comment>{0}: estimated copy time in hours, rounded to one decimal.</comment>
+  </data>
+  <data name="RecordingsPage_Estimate" xml:space="preserve">
+    <value>{0}, {1}, копирование займёт {2}.</value>
+    <comment>{0}: number of recordings with the noun, e.g. 36 записей. {1}: total size. {2}: estimated copy time.</comment>
+  </data>
+  <data name="RecordingsPage_SizeGigabytes" xml:space="preserve">
+    <value>{0:0.#} ГБ</value>
+    <comment>{0}: size in gigabytes.</comment>
+  </data>
+  <data name="RecordingsPage_SizeMegabytes" xml:space="preserve">
+    <value>{0:0.#} МБ</value>
+    <comment>{0}: size in megabytes.</comment>
+  </data>
+  <data name="WritePage_Header" xml:space="preserve">
+    <value>Последняя проверка перед записью</value>
+  </data>
+  <data name="WritePage_Subheader" xml:space="preserve">
+    <value>Сейчас программа сотрёт всё, что есть на карте. Отменить это нельзя.</value>
+  </data>
+  <data name="WritePage_WhichCard" xml:space="preserve">
+    <value>Какая карта</value>
+  </data>
+  <data name="WritePage_WhatWillBeWritten" xml:space="preserve">
+    <value>Что будет записано</value>
+  </data>
+  <data name="WritePage_WhatWasWritten" xml:space="preserve">
+    <value>Что записано</value>
+  </data>
+  <data name="WritePage_StepForModel" xml:space="preserve">
+    <value>{0} для {1}</value>
+    <comment>{0}: card pass title, e.g. База камер от 09.09.2026. {1}: model name.</comment>
+  </data>
+  <data name="WritePage_EraseConsent" xml:space="preserve">
+    <value>Это карта из регистратора, и то, что на ней есть, мне не нужно.</value>
+  </data>
+  <data name="WritePage_KeepFilesTitle" xml:space="preserve">
+    <value>Можно записать файлы, не стирая карту</value>
+  </data>
+  <data name="WritePage_KeepFilesExplanation" xml:space="preserve">
+    <value>Чистая карта регистратору не обязательна: он ищет файлы обновления прямо на карте.</value>
+  </data>
+  <data name="WritePage_WriteWithoutErasing" xml:space="preserve">
+    <value>Записать, не стирая карту</value>
+  </data>
+  <data name="WritePage_ManualFormatTitle" xml:space="preserve">
+    <value>Как очистить карту вручную</value>
+  </data>
+  <data name="WritePage_OpenThisPc" xml:space="preserve">
+    <value>Открыть «Этот компьютер»</value>
+  </data>
+  <data name="WritePage_ManualFormatDone" xml:space="preserve">
+    <value>Карта очищена, записать файлы</value>
+  </data>
+  <data name="WritePage_WritingBusy" xml:space="preserve">
+    <value>Программа записывает файлы на карту. Если закрыть её сейчас, карта останется недописанной. Это займёт несколько минут, дождитесь конца.</value>
+  </data>
+  <data name="WritePage_WrittenButNotUpdated" xml:space="preserve">
+    <value>Файлы уже записаны на карту, но регистратор ещё не обновлён. Если закрыть программу, подсказок, что делать с ним дальше, не будет.</value>
+  </data>
+  <data name="WritePage_Files" xml:space="preserve">
+    <value>Файлов: {0}, всего {1}. Все скачаны с сервера Inspector и проверены.</value>
+    <comment>{0}: number of files. {1}: total size, e.g. 144 МБ.</comment>
+  </data>
+  <data name="WritePage_EraseAndWrite" xml:space="preserve">
+    <value>Стереть карту и записать</value>
+  </data>
+  <data name="WritePage_CardNotVisible" xml:space="preserve">
+    <value>Компьютер не видит карту. Если вы её вынули, вставьте обратно в тот же разъём.</value>
+  </data>
+  <data name="WritePage_CardBack" xml:space="preserve">
+    <value>Карта снова на месте</value>
+  </data>
+  <data name="WritePage_CardMissing" xml:space="preserve">
+    <value>Карта пропала из компьютера. Вставьте её обратно в тот же разъём.</value>
+  </data>
+  <data name="WritePage_CardLabel" xml:space="preserve">
+    <value>, название «{0}»</value>
+    <comment>Appended to WritePage_Card when the card has a volume label. {0}: volume label.</comment>
+  </data>
+  <data name="WritePage_Card" xml:space="preserve">
+    <value>Карта {0} на {1:0.#} ГБ{2}</value>
+    <comment>{0}: drive name, e.g. F:. {1}: card size in GB. {2}: WritePage_CardLabel text or empty.</comment>
+  </data>
+  <data name="WritePage_InsertAnotherCard" xml:space="preserve">
+    <value>Вставить другую карту</value>
+  </data>
+  <data name="WritePage_RecordingsSavedTo" xml:space="preserve">
+    <value>Записи с этой карты вы сохранили в папку «{0}».</value>
+    <comment>{0}: full path of the folder with saved recordings.</comment>
+  </data>
+  <data name="WritePage_RecordingsWillBeErased" xml:space="preserve">
+    <value>Сейчас на карте {0}. Всё это сотрётся.</value>
+    <comment>{0}: number of recordings with the noun, e.g. 36 записей.</comment>
+  </data>
+  <data name="WritePage_RecordingsOnCard" xml:space="preserve">
+    <value>Сейчас на карте {0}.</value>
+    <comment>{0}: number of recordings with the noun, e.g. 36 записей. Used when the card is not going to be erased.</comment>
+  </data>
+  <data name="WritePage_FilesWillBeErased" xml:space="preserve">
+    <value>На карте есть файлы. Всё это сотрётся.</value>
+  </data>
+  <data name="WritePage_FilesOnCard" xml:space="preserve">
+    <value>На карте есть файлы.</value>
+    <comment>Used when the card is not going to be erased.</comment>
+  </data>
+  <data name="WritePage_CardLooksEmpty" xml:space="preserve">
+    <value>Карта выглядит пустой.</value>
+  </data>
+  <data name="WritePage_CardErased" xml:space="preserve">
+    <value>Карта очищена, записей на ней больше нет.</value>
+  </data>
+  <data name="WritePage_ContentsUnreadable" xml:space="preserve">
+    <value>Что на карте сейчас, прочитать не удалось.</value>
+  </data>
+  <data name="WritePage_Erasing" xml:space="preserve">
+    <value>Очищаем карту. Не вынимайте её и не выключайте компьютер.</value>
+  </data>
+  <data name="WritePage_WritingWithoutErasing" xml:space="preserve">
+    <value>Записываем файлы, не стирая карту. Не вынимайте её.</value>
+  </data>
+  <data name="WritePage_WritingToPreparedCard" xml:space="preserve">
+    <value>Записываем файлы на карту. Не вынимайте её.</value>
+  </data>
+  <data name="WritePage_PreviewMode" xml:space="preserve">
+    <value>Это режим просмотра, запись на карту отключена.</value>
+  </data>
+  <data name="WritePage_ReadyHeader" xml:space="preserve">
+    <value>Карта готова</value>
+  </data>
+  <data name="WritePage_ReadySubheader" xml:space="preserve">
+    <value>Файлы обновления записаны на карту и проверены.</value>
+  </data>
+  <data name="WritePage_ReadyText" xml:space="preserve">
+    <value>Дальше программа даст инструкцию для машины, её можно сфотографировать.</value>
+  </data>
+  <data name="WritePage_EraseFailedHeader" xml:space="preserve">
+    <value>Стереть карту не получилось</value>
+  </data>
+  <data name="WritePage_WriteFailedHeader" xml:space="preserve">
+    <value>Записать не получилось</value>
+  </data>
+  <data name="WritePage_FailedAfterErase" xml:space="preserve">
+    <value>{0} Карта уже очищена, прежние записи с неё не вернуть. Не вставляйте её в регистратор, пока программа не запишет файлы заново.</value>
+    <comment>{0}: description of the problem from the card writer.</comment>
+  </data>
+  <data name="WritePage_FailedPartlyWritten" xml:space="preserve">
+    <value>{0} Часть файлов могла записаться на карту. Не вставляйте её в регистратор, пока программа не запишет файлы заново.</value>
+    <comment>{0}: problem reported by the card writer.</comment>
+  </data>
+  <data name="WritePage_TechnicalDetails" xml:space="preserve">
+    <value>Техническая причина: {0}</value>
+    <comment>{0}: error message reported by the system.</comment>
+  </data>
+  <data name="WritePage_FailedCardUnchanged" xml:space="preserve">
+    <value>{0} Карта не изменилась.</value>
+    <comment>{0}: description of the problem from the card writer.</comment>
+  </data>
+  <data name="WritePage_EnoughSpace" xml:space="preserve">
+    <value>Записи на карте останутся на месте. Файлы обновления занимают {0}, на карте свободно {1}. Места хватает.</value>
+    <comment>{0}: size of the update files. {1}: free space on the card.</comment>
+  </data>
+  <data name="WritePage_NotEnoughSpace" xml:space="preserve">
+    <value>Места на карте не хватает: файлы обновления занимают {0}, а свободно {1}. Поэтому карту придётся очистить вручную, как написано ниже.</value>
+    <comment>{0}: size of the update files. {1}: free space on the card.</comment>
+  </data>
+  <data name="WritePage_Gigabytes" xml:space="preserve">
+    <value>{0:0.#} ГБ</value>
+    <comment>{0}: card size in gigabytes.</comment>
+  </data>
+  <data name="WritePage_Megabytes" xml:space="preserve">
+    <value>{0} МБ</value>
+    <comment>{0}: size in megabytes.</comment>
+  </data>
+  <data name="WritePage_ManualFormatSteps" xml:space="preserve">
+    <value>Откройте «Этот компьютер» и найдите карту {0} ({1}). Проверьте букву и объём, чтобы не ошибиться диском. Щёлкните по карте правой кнопкой мыши, выберите «Форматировать», в поле «Файловая система» поставьте {2} и нажмите «Начать». Когда Windows скажет, что готово, вернитесь сюда.</value>
+    <comment>{0}: drive name, e.g. F:. {1}: card size with unit, or empty. {2}: file system name, FAT32 or exFAT.</comment>
+  </data>
+  <data name="WritePage_OpenThisPcFailed" xml:space="preserve">
+    <value> Открыть окно не получилось. Нажмите на клавиатуре Win и E одновременно.</value>
+    <comment>Appended to WritePage_ManualFormatSteps; starts with a space.</comment>
+  </data>
+  <data name="CarInstructionPage_EngineWarning" xml:space="preserve">
+    <value>Заведите двигатель заранее и не глушите его, пока не дойдёте до конца списка. Во многих машинах регистратор без заведённого двигателя не питается.</value>
+  </data>
+  <data name="CarInstructionPage_Header" xml:space="preserve">
+    <value>Инструкция для машины</value>
+  </data>
+  <data name="CarInstructionPage_Subheader" xml:space="preserve">
+    <value>У машины программы под рукой не будет. Сфотографируйте список на телефон (если не поместится, сделайте несколько снимков) или сохраните его в файл. Сделайте всё по порядку и вернитесь к компьютеру.</value>
+  </data>
+  <data name="CarInstructionPage_SaveToFile" xml:space="preserve">
+    <value>Сохранить в файл</value>
+  </data>
+  <data name="CarInstructionPage_AllDone" xml:space="preserve">
+    <value>Всё сделано</value>
+  </data>
+  <data name="CarInstructionPage_DefaultModelName" xml:space="preserve">
+    <value>Регистратор</value>
+    <comment>Used in the saved instruction when the model is unknown.</comment>
+  </data>
+  <data name="CarInstructionPage_FileName" xml:space="preserve">
+    <value>Что сделать в машине.txt</value>
+    <comment>Name of the instruction file saved to the desktop.</comment>
+  </data>
+  <data name="CarInstructionPage_Saved" xml:space="preserve">
+    <value>Инструкция сохранена на рабочий стол, файл «{0}».</value>
+    <comment>{0}: CarInstructionPage_FileName.</comment>
+  </data>
+  <data name="CarInstructionPage_SaveFailed" xml:space="preserve">
+    <value>Сохранить файл не получилось: {0} Список можно сфотографировать прямо с экрана.</value>
+    <comment>{0}: error message from the file system.</comment>
+  </data>
+  <data name="DeviceActionPage_UpdatingWarning" xml:space="preserve">
+    <value>Идёт обновление. Не вынимайте карту и не глушите двигатель.</value>
+  </data>
+  <data name="DeviceActionPage_HelpTitle" xml:space="preserve">
+    <value>Что можно сделать</value>
+  </data>
+  <data name="DeviceActionPage_Yes" xml:space="preserve">
+    <value>Да</value>
+  </data>
+  <data name="DeviceActionPage_No" xml:space="preserve">
+    <value>Нет</value>
+  </data>
+  <data name="DeviceActionPage_WorksNow" xml:space="preserve">
+    <value>Теперь получилось</value>
+  </data>
+  <data name="DeviceActionPage_StillFails" xml:space="preserve">
+    <value>Не получается</value>
+  </data>
+  <data name="FinishPage_SuccessHeader" xml:space="preserve">
+    <value>Готово! Регистратор обновлён</value>
+  </data>
+  <data name="FinishPage_SuccessLead" xml:space="preserve">
+    <value>Обновление закончено. Программу можно закрыть.</value>
+  </data>
+  <data name="FinishPage_ModelLabel" xml:space="preserve">
+    <value>Регистратор</value>
+  </data>
+  <data name="FinishPage_UpdatedLabel" xml:space="preserve">
+    <value>Что обновлено</value>
+  </data>
+  <data name="FinishPage_FirmwareLabel" xml:space="preserve">
+    <value>Прошивка в регистраторе</value>
+  </data>
+  <data name="FinishPage_RecordingsLabel" xml:space="preserve">
+    <value>Записи с карты сохранены в папку</value>
+  </data>
+  <data name="FinishPage_AllPassesDone" xml:space="preserve">
+    <value>Все заходы с картой пройдены.</value>
+  </data>
+  <data name="FinishPage_NotFinishedHeader" xml:space="preserve">
+    <value>Обновление не закончено</value>
+  </data>
+  <data name="FinishPage_BackToHintExplanation" xml:space="preserve">
+    <value>Если нажали «Не получается» по ошибке, вернитесь к подсказке.</value>
+  </data>
+  <data name="FinishPage_CloseProgram" xml:space="preserve">
+    <value>Закрыть программу</value>
+  </data>
+  <data name="FinishPage_BackToHint" xml:space="preserve">
+    <value>Вернуться к подсказке</value>
+  </data>
+  <data name="CardRules_TooLarge" xml:space="preserve">
+    <value>Эта карта на {0} ГБ, а регистратор принимает карты не больше {1} ГБ. Возьмите карту поменьше.</value>
+    <comment>{0}: card size in GB. {1}: largest card size the model accepts, in GB.</comment>
+  </data>
+  <data name="CardRules_TooSmall" xml:space="preserve">
+    <value>Эта карта на {0} ГБ, а регистратору нужна не меньше {1} ГБ. Возьмите карту побольше.</value>
+    <comment>{0}: card size in GB. {1}: smallest card size the model accepts, in GB.</comment>
+  </data>
+  <data name="CardWriter_NotRemovableForFormat" xml:space="preserve">
+    <value>Диск {0} не съёмный. Программа форматирует только карты памяти и флешки.</value>
+    <comment>{0}: drive name, e.g. F:\.</comment>
+  </data>
+  <data name="CardWriter_NotRemovableForWrite" xml:space="preserve">
+    <value>Диск {0} не съёмный. Программа пишет только на карты памяти и флешки.</value>
+    <comment>{0}: drive name, e.g. F:\.</comment>
+  </data>
+  <data name="CardWriter_CardMissing" xml:space="preserve">
+    <value>Карта пропала из компьютера. Вставьте её обратно и начните этот шаг заново.</value>
+  </data>
+  <data name="CardWriter_CardReplacedBeforeFormat" xml:space="preserve">
+    <value>Карта в компьютере не та, которую вы подтверждали. Если вы меняли карту, начните этот шаг заново, чтобы не стереть чужую карту.</value>
+  </data>
+  <data name="CardWriter_CardReplaced" xml:space="preserve">
+    <value>Карта в компьютере не та, которую вы подтверждали. Вставьте прежнюю карту или начните этот шаг заново.</value>
+  </data>
+  <data name="CardWriter_CardNotEmpty" xml:space="preserve">
+    <value>На карте остались файлы. Похоже, она не отформатирована. Очистите её и нажмите кнопку ещё раз.</value>
+  </data>
+  <data name="CardWriter_WrongFileSystem" xml:space="preserve">
+    <value>Карта отформатирована как {0}, а регистратору нужна {1}. Отформатируйте её ещё раз и выберите {1}.</value>
+    <comment>{0}: current file system of the card, e.g. NTFS. {1}: required file system, FAT32 or exFAT.</comment>
+  </data>
+  <data name="CardWriter_NotEnoughFreeSpace" xml:space="preserve">
+    <value>На карте не хватает места: нужно {0} МБ, свободно {1} МБ. Освободите место на карте или очистите её целиком.</value>
+    <comment>{0}: space needed, in MB. {1}: free space on the card, in MB.</comment>
+  </data>
+  <data name="CardWriter_VerifyFailed" xml:space="preserve">
+    <value>Файлы записались на карту не полностью.</value>
+  </data>
+  <data name="CardWriter_NoFiles" xml:space="preserve">
+    <value>Записывать нечего: список файлов пуст.</value>
+  </data>
+  <data name="CardWriter_FileNotFound" xml:space="preserve">
+    <value>Файл {0} не найден. Скачайте обновление заново.</value>
+    <comment>{0}: file name.</comment>
+  </data>
+  <data name="CardWriter_FileEmpty" xml:space="preserve">
+    <value>Файл {0} пустой, записывать его на карту нельзя. Скачайте обновление заново.</value>
+    <comment>{0}: file name.</comment>
+  </data>
+  <data name="CardWriter_DuplicateFileNames" xml:space="preserve">
+    <value>Два разных файла обновления называются одинаково ({0}). На карте они затёрли бы друг друга. Обновите Inspectrol или напишите автору.</value>
+    <comment>{0}: the shared file name.</comment>
+  </data>
+  <data name="CardWriter_FilesLargerThanCard" xml:space="preserve">
+    <value>Файлы обновления занимают {0} МБ, а карта меньше. Возьмите карту побольше.</value>
+    <comment>{0}: total size of the update files, in MB.</comment>
+  </data>
+  <data name="CardWriter_Cancelled" xml:space="preserve">
+    <value>Запись прервана.</value>
+  </data>
+  <data name="CardWriter_WriteProtected" xml:space="preserve">
+    <value>Карта защищена от записи. На переходнике для карты есть маленький переключатель сбоку. Сдвиньте его в другое положение и попробуйте снова.</value>
+  </data>
+  <data name="CardWriter_FormatFailed" xml:space="preserve">
+    <value>Не удалось очистить карту. Проверьте, что она вставлена до конца, и попробуйте снова.</value>
+  </data>
+  <data name="CardWriter_ConnectionLost" xml:space="preserve">
+    <value>Во время записи связь с картой пропала. Возможно, её вынули или она неисправна.</value>
+  </data>
+  <data name="WindowsCardStorage_NotRemovable" xml:space="preserve">
+    <value>Диск {0} не съёмный, форматировать его программа не будет.</value>
+    <comment>{0}: drive name, e.g. F:\.</comment>
+  </data>
+  <data name="WindowsCardStorage_FormatNotStarted" xml:space="preserve">
+    <value>Не удалось запустить очистку карты.</value>
+  </data>
+  <data name="WindowsCardStorage_NeedsAdministrator" xml:space="preserve">
+    <value>Windows не дала очистить карту без прав администратора.</value>
+  </data>
+  <data name="WindowsCardStorage_FormatFailed" xml:space="preserve">
+    <value>Не удалось очистить карту: {0}</value>
+    <comment>{0}: error output of the Format-Volume command.</comment>
+  </data>
+  <data name="InspectorCatalog_ModelListUnreadable" xml:space="preserve">
+    <value>Похоже, сайт Inspector изменился: не удалось прочитать список моделей.</value>
+  </data>
+  <data name="InspectorCatalog_UpdatedOverCable" xml:space="preserve">
+    <value>{0} обновляется через кабель и программу Inspector. Такие модели программа пока не поддерживает.</value>
+    <comment>{0}: model name.</comment>
+  </data>
+  <data name="InspectorCatalog_DatabaseFileLinkMissing" xml:space="preserve">
+    <value>Похоже, сайт Inspector изменился: на странице базы нет ссылки на файл.</value>
+  </data>
+  <data name="InspectorCatalog_DatabaseOnForeignSite" xml:space="preserve">
+    <value>Файлы обновления для модели {0} лежат на сайте производителя. Программа скачивает файлы только с сервера Inspector, поэтому откройте страницу модели на rd-inspector.ru и скачайте их оттуда.</value>
+    <comment>{0}: model name.</comment>
+  </data>
+  <data name="InspectorCatalog_NothingPublished" xml:space="preserve">
+    <value>Для модели {0} Inspector не выложил ни прошивки, ни базы камер.</value>
+    <comment>{0}: model name.</comment>
+  </data>
+  <data name="InspectorCatalog_RegionRequired" xml:space="preserve">
+    <value>У модели {0} разные прошивки для разных стран. Нужно выбрать регион: {1}.</value>
+    <comment>{0}: model name. {1}: comma-separated list of regions, e.g. РФ, УЗ.</comment>
+  </data>
+  <data name="InspectorCatalog_NoFirmwareForRegion" xml:space="preserve">
+    <value>Для модели {0} нет прошивки для региона «{1}».</value>
+    <comment>{0}: model name. {1}: region, e.g. РФ.</comment>
+  </data>
+  <data name="SupportIndexParser_NoUpdatesRead" xml:space="preserve">
+    <value>Страница поддержки Inspector изменилась: программа не смогла прочитать на ней ни одного обновления. Обновите Inspectrol или откройте rd-inspector.ru/support/ в браузере.</value>
+  </data>
+  <data name="SupportIndexParser_UpdatesLost" xml:space="preserve">
+    <value>Страница поддержки Inspector изменилась: на ней {0} ссылок на обновления, а прочитать удалось только {1}. Обновите Inspectrol или откройте rd-inspector.ru/support/ в браузере.</value>
+    <comment>{0}: number of update links on the page. {1}: number of updates read.</comment>
+  </data>
+  <data name="UpdatePageParser_ButtonWithoutAddress" xml:space="preserve">
+    <value>Страница обновления Inspector изменилась: у кнопки «Скачать» нет адреса файла. Обновите Inspectrol или откройте страницу на rd-inspector.ru в браузере.</value>
+  </data>
+  <data name="UpdatePageParser_ButtonMissing" xml:space="preserve">
+    <value>Страница обновления Inspector изменилась: на ней не нашлось кнопки «Скачать». Обновите Inspectrol или откройте страницу на rd-inspector.ru в браузере.</value>
+  </data>
+  <data name="DeviceRecognition_TagsUnreadable" xml:space="preserve">
+    <value>Записи на карте есть, но узнать по ним регистратор не удалось. Выберите модель из списка. Название написано на наклейке регистратора.</value>
+  </data>
+  <data name="DeviceRecognition_SeveralDevices" xml:space="preserve">
+    <value>На карте записи от разных регистраторов ({0}). Похоже, карту переставляли из одного регистратора в другой. Выберите модель из списка сами.</value>
+    <comment>{0}: comma-separated model tags found in the recordings.</comment>
+  </data>
+  <data name="DeviceRecognition_ModelNotOnSite" xml:space="preserve">
+    <value>Регистратор представился как «{0}», но такой модели на сайте Inspector не нашлось. Выберите модель из списка.</value>
+    <comment>{0}: model tag read from the recording, e.g. AtlaS.</comment>
+  </data>
+  <data name="DeviceRecognition_SeveralModelsMatch" xml:space="preserve">
+    <value>Метке «{0}» подходит несколько моделей с сайта ({1}). Выберите нужную сами.</value>
+    <comment>{0}: model tag read from the recording. {1}: comma-separated matching model names.</comment>
+  </data>
+  <data name="DeviceRecognition_NoRecordings" xml:space="preserve">
+    <value>На карте нет записей, поэтому узнать регистратор по ней не получилось. Выберите модель из списка. Название написано на наклейке регистратора.</value>
+  </data>
+  <data name="DeviceRecognition_UpdateFilesAmbiguous" xml:space="preserve">
+    <value>На карте нет записей, а по файлам обновления нельзя точно сказать, для какой они модели. Выберите модель из списка. Название написано на наклейке регистратора.</value>
+  </data>
+  <data name="RecordingsBackup_NotEnoughSpace" xml:space="preserve">
+    <value>На компьютере не хватает места: нужно {0} МБ, свободно {1} МБ. Освободите место или сохраните меньше записей.</value>
+    <comment>{0}: space needed, in MB. {1}: free space on the target drive, in MB.</comment>
+  </data>
+  <data name="RecordingsBackup_CopyIncomplete" xml:space="preserve">
+    <value>Запись «{0}» скопировалась на компьютер не целиком, неполную копию программа удалила. Карту пока не очищайте: проверьте, что она плотно стоит в кард-ридере, и сохраните записи ещё раз.</value>
+    <comment>{0}: recording file name.</comment>
+  </data>
+  <data name="ArchiveExtractor_SuspiciousPath" xml:space="preserve">
+    <value>В архиве подозрительный путь: {0}</value>
+    <comment>{0}: entry path inside the archive.</comment>
+  </data>
+  <data name="ArchiveExtractor_NoDeviceFiles" xml:space="preserve">
+    <value>В архиве нет файлов для устройства, это не похоже на обновление Inspector.</value>
+  </data>
+  <data name="ArchiveExtractor_NotAnArchive" xml:space="preserve">
+    <value>Файл {0} не похож на архив обновления. Возможно, скачался не он или загрузка оборвалась. Попробуйте ещё раз.</value>
+    <comment>{0}: archive file name.</comment>
+  </data>
+  <data name="FileDownloader_SizeUnknown" xml:space="preserve">
+    <value>Сервер не сообщил размер файла, поэтому проверить, что файл скачался целиком, невозможно. Попробуйте ещё раз.</value>
+  </data>
+  <data name="FileDownloader_Incomplete" xml:space="preserve">
+    <value>Файл скачался не полностью: получено {0} из {1} байт.</value>
+    <comment>{0}: bytes received. {1}: bytes expected.</comment>
+  </data>
+  <data name="FileDownloader_NoFileName" xml:space="preserve">
+    <value>В ссылке нет имени файла: {0}</value>
+    <comment>{0}: download URL.</comment>
+  </data>
+  <data name="FileDownloader_InvalidFileName" xml:space="preserve">
+    <value>В ссылке недопустимое для Windows имя файла: {0}</value>
+    <comment>{0}: file name taken from the URL.</comment>
+  </data>
+  <data name="ActionLog_ErrorEntry" xml:space="preserve">
+    <value>ОШИБКА: {0}. {1}: {2}</value>
+    <comment>{0}: description of what failed. {1}: exception type name. {2}: exception message.</comment>
+  </data>
+  <data name="ActionLog_ReportTitle" xml:space="preserve">
+    <value>Отчёт Inspectrol</value>
+  </data>
+  <data name="ActionLog_ReportCreated" xml:space="preserve">
+    <value>Составлен: {0:yyyy-MM-dd HH:mm:ss}</value>
+    <comment>{0}: time the report was created.</comment>
+  </data>
+  <data name="ActionLog_ReportWindows" xml:space="preserve">
+    <value>Windows: {0}, 64-разрядная: {1}</value>
+    <comment>{0}: Windows version string. {1}: True or False for a 64-bit system.</comment>
+  </data>
+  <data name="ActionLog_ReportAdministrator" xml:space="preserve">
+    <value>Права администратора: {0}</value>
+    <comment>{0}: True or False for an elevated process.</comment>
+  </data>
+  <data name="ActionLog_ReportVersion" xml:space="preserve">
+    <value>Программа: {0}</value>
+    <comment>{0}: Inspectrol version.</comment>
+  </data>
+  <data name="ActionLog_ReportLogHeader" xml:space="preserve">
+    <value>--- Журнал действий ---</value>
+  </data>
+  <data name="ActionLog_ReportLogEmpty" xml:space="preserve">
+    <value>(журнал пуст)</value>
+  </data>
+  <data name="CarInstructions_Heading" xml:space="preserve">
+    <value>{0}: что сделать в машине</value>
+    <comment>{0}: dashcam model name.</comment>
+  </data>
+  <data name="CarInstructions_EngineRule" xml:space="preserve">
+    <value>Двигатель заведите заранее и не глушите, пока не дойдёте до конца списка.</value>
+  </data>
+  <data name="CarInstructions_IfNot" xml:space="preserve">
+    <value>Если не вышло: {0}</value>
+    <comment>{0}: hint for the case when the step did not work.</comment>
+  </data>
+  <data name="CarInstructions_Ending" xml:space="preserve">
+    <value>Когда закончите, вернитесь к компьютеру: программа спросит, что получилось.</value>
+  </data>
+  <data name="DeviceProcedure_DontTouch" xml:space="preserve">
+    <value>Ничего не нажимайте, не вынимайте карту и не глушите двигатель.</value>
+  </data>
+  <data name="DeviceProcedure_SupportPage" xml:space="preserve">
+    <value>Не повторяйте обновление сразу. Сначала откройте страницу вашей модели на сайте Inspector (rd-inspector.ru, раздел «Поддержка»), там для многих моделей описано, что делать.</value>
+  </data>
+  <data name="DeviceProcedure_CardOutOfComputerTitle" xml:space="preserve">
+    <value>Выньте карту из компьютера</value>
+  </data>
+  <data name="DeviceProcedure_CardOutOfComputerText" xml:space="preserve">
+    <value>Файлы на карте записаны и проверены. Выньте карту из компьютера или из переходника.</value>
+  </data>
+  <data name="DeviceProcedure_CardOutOfComputerQuestion" xml:space="preserve">
+    <value>Карта вынута?</value>
+  </data>
+  <data name="DeviceProcedure_CardOutOfComputerIfNot" xml:space="preserve">
+    <value>Windows может написать, что карта занята. Тогда закройте окна, в которых она открыта, и попробуйте ещё раз. Файлы на карте уже записаны и проверены.</value>
+  </data>
+  <data name="DeviceProcedure_CardIntoDeviceTitle" xml:space="preserve">
+    <value>Вставьте карту в регистратор</value>
+  </data>
+  <data name="DeviceProcedure_CardIntoDeviceText" xml:space="preserve">
+    <value>Вставьте карту в разъём регистратора до щелчка.</value>
+  </data>
+  <data name="DeviceProcedure_CardIntoDeviceQuestion" xml:space="preserve">
+    <value>Карта встала на место?</value>
+  </data>
+  <data name="DeviceProcedure_CardIntoDeviceIfNot" xml:space="preserve">
+    <value>Не давите на карту силой. Выньте её, переверните другой стороной и вставьте снова.</value>
+  </data>
+  <data name="DeviceProcedure_StartEngineTitle" xml:space="preserve">
+    <value>Заведите двигатель</value>
+  </data>
+  <data name="DeviceProcedure_StartEngineText" xml:space="preserve">
+    <value>Во многих машинах регистратор получает питание только при заведённом двигателе. Заведите двигатель сейчас, до начала обновления, и не глушите его, пока не дойдёте до конца этого списка.</value>
+  </data>
+  <data name="DeviceProcedure_StartEngineQuestion" xml:space="preserve">
+    <value>Регистратор включился?</value>
+  </data>
+  <data name="DeviceProcedure_StartEngineIfNot" xml:space="preserve">
+    <value>Проверьте, что провод питания вставлен и в регистратор, и в гнездо в машине. Если регистратор выключен кнопкой, включите его кнопкой питания.</value>
+  </data>
+  <data name="DeviceProcedure_StartEngineGiveUp" xml:space="preserve">
+    <value>Регистратор не включился, значит обновление не началось и с ним ничего не случилось. Проверьте питание регистратора и пройдите программу заново, когда он будет включаться.</value>
+  </data>
+  <data name="DeviceProcedure_AcceptUpdateTitle" xml:space="preserve">
+    <value>Согласитесь на обновление</value>
+  </data>
+  <data name="DeviceProcedure_AcceptUpdateNumberedTitle" xml:space="preserve">
+    <value>Согласитесь на обновление ({0} из {1})</value>
+    <comment>{0}: number of this update. {1}: number of updates in the pass.</comment>
+  </data>
+  <data name="DeviceProcedure_AcceptFirstUpdateText" xml:space="preserve">
+    <value>Вскоре после включения регистратор найдёт файлы на карте и спросит, обновляться ли. Выберите на его экране «кружок», чтобы согласиться. «Крестик» отменяет обновление.</value>
+  </data>
+  <data name="DeviceProcedure_AcceptUpdateCountNote" xml:space="preserve">
+    <value>Вопросов будет {0}, по одному на каждое обновление, и между ними регистратор перезагрузится. Так и должно быть.</value>
+    <comment>{0}: number of updates in the pass. Appended after DeviceProcedure_AcceptFirstUpdateText when there is more than one update.</comment>
+  </data>
+  <data name="DeviceProcedure_AcceptNextUpdateText" xml:space="preserve">
+    <value>После перезагрузки регистратор спросит про следующее обновление. Снова выберите «кружок».</value>
+  </data>
+  <data name="DeviceProcedure_AcceptUpdateQuestion" xml:space="preserve">
+    <value>Регистратор спросил, и вы согласились?</value>
+  </data>
+  <data name="DeviceProcedure_AcceptFirstUpdateIfNot" xml:space="preserve">
+    <value>Подождите пару минут: регистратору нужно время, чтобы загрузиться и найти файлы. Если вопроса так и нет, выключите регистратор кнопкой питания и включите снова. Двигатель не глушите.</value>
+  </data>
+  <data name="DeviceProcedure_AcceptNextUpdateIfNot" xml:space="preserve">
+    <value>Подождите несколько минут: после перезагрузки регистратору нужно время. Карту не вынимайте и двигатель не глушите.</value>
+  </data>
+  <data name="DeviceProcedure_AcceptFirstUpdateGiveUp" xml:space="preserve">
+    <value>Регистратор не спросил про обновление, значит, оно не началось, и с устройством ничего не случилось. Возможно, этой модели нужны другие файлы.</value>
+    <comment>Followed by DeviceProcedure_SupportPage.</comment>
+  </data>
+  <data name="DeviceProcedure_AcceptNextUpdateGiveUp" xml:space="preserve">
+    <value>Регистратор не спросил про следующее обновление. Первое при этом могло установиться. Не вынимайте карту ещё несколько минут, потом проверьте версию в меню регистратора.</value>
+    <comment>Followed by DeviceProcedure_SupportPage.</comment>
+  </data>
+  <data name="DeviceProcedure_WaitForRebootTitle" xml:space="preserve">
+    <value>Дождитесь перезагрузки</value>
+  </data>
+  <data name="DeviceProcedure_WaitForRebootText" xml:space="preserve">
+    <value>На экране регистратора появится надпись «Обновление…», потом он перезагрузится сам.</value>
+    <comment>Followed by DeviceProcedure_DontTouch and DeviceProcedure_WaitForRebootDuration.</comment>
+  </data>
+  <data name="DeviceProcedure_WaitForRebootDuration" xml:space="preserve">
+    <value>Это может занять несколько минут.</value>
+  </data>
+  <data name="DeviceProcedure_WaitForMapsDuration" xml:space="preserve">
+    <value>Карты eMap устанавливаются дольше, от 10 до 15 минут.</value>
+  </data>
+  <data name="SimulatedCard_NotReady" xml:space="preserve">
+    <value>Устройство не готово.</value>
+  </data>
+  <data name="Simulator_TitleSuffix" xml:space="preserve">
+    <value> (симулятор)</value>
+  </data>
+  <data name="Simulator_WindowTitle" xml:space="preserve">
+    <value>Пульт симулятора</value>
+  </data>
+  <data name="Simulator_Header" xml:space="preserve">
+    <value>Пульт симулятора</value>
+  </data>
+  <data name="Simulator_Intro" xml:space="preserve">
+    <value>Слева обычная программа. Здесь вы изображаете карту памяти и регистратор. Настоящие диски в этом режиме недоступны: карта хранится в папке на компьютере.</value>
+  </data>
+  <data name="Simulator_CardTitle" xml:space="preserve">
+    <value>Карта памяти</value>
+  </data>
+  <data name="Simulator_CardInComputer" xml:space="preserve">
+    <value>Вставлена в компьютер.</value>
+  </data>
+  <data name="Simulator_CardOut" xml:space="preserve">
+    <value>Вынута из компьютера.</value>
+  </data>
+  <data name="Simulator_Insert" xml:space="preserve">
+    <value>Вставить в компьютер</value>
+  </data>
+  <data name="Simulator_Remove" xml:space="preserve">
+    <value>Вынуть</value>
+  </data>
+  <data name="Simulator_Summary" xml:space="preserve">
+    <value>На карте: {0}.</value>
+  </data>
+  <data name="Simulator_SummaryEmpty" xml:space="preserve">
+    <value>Карта пустая.</value>
+  </data>
+  <data name="Simulator_SummaryUpdateFiles" xml:space="preserve">
+    <value>файлы обновления ({0})</value>
+  </data>
+  <data name="Simulator_SummaryOtherFiles" xml:space="preserve">
+    <value>другие файлы ({0})</value>
+  </data>
+  <data name="Simulator_SummaryDashcam" xml:space="preserve">
+    <value>Регистратор {0}, прошивка {1}.</value>
+  </data>
+  <data name="Simulator_ContentTitle" xml:space="preserve">
+    <value>Какая карта</value>
+  </data>
+  <data name="Simulator_ContentHint" xml:space="preserve">
+    <value>Меняется, пока карта вынута. Карта соберётся заново, когда вы её вставите.</value>
+  </data>
+  <data name="Simulator_ContentRecordings" xml:space="preserve">
+    <value>С записями регистратора</value>
+  </data>
+  <data name="Simulator_ContentEmpty" xml:space="preserve">
+    <value>Пустая</value>
+  </data>
+  <data name="Simulator_ContentUpdateFiles" xml:space="preserve">
+    <value>С уже записанным обновлением</value>
+  </data>
+  <data name="Simulator_ContentPhotos" xml:space="preserve">
+    <value>Флешка с фотографиями</value>
+  </data>
+  <data name="Simulator_DashcamLabel" xml:space="preserve">
+    <value>Регистратор</value>
+  </data>
+  <data name="Simulator_FirmwareLabel" xml:space="preserve">
+    <value>Прошивка в регистраторе</value>
+  </data>
+  <data name="Simulator_FirmwareHint" xml:space="preserve">
+    <value>Версия вида 1.0.3</value>
+  </data>
+  <data name="Simulator_SizeLabel" xml:space="preserve">
+    <value>Объём карты</value>
+  </data>
+  <data name="Simulator_SizeItem" xml:space="preserve">
+    <value>{0} ГБ</value>
+  </data>
+  <data name="Simulator_CarTitle" xml:space="preserve">
+    <value>Регистратор в машине</value>
+  </data>
+  <data name="Simulator_CarText" xml:space="preserve">
+    <value>Когда программа отправит вас к машине, выньте карту и нажмите «Вставить в регистратор». Регистратор запишет несколько роликов, а если на карте есть прошивка, обновится. Потом вставьте карту обратно в компьютер.</value>
+  </data>
+  <data name="Simulator_CarInstalls" xml:space="preserve">
+    <value>Регистратор ставит обновление с карты</value>
+  </data>
+  <data name="Simulator_CarRun" xml:space="preserve">
+    <value>Вставить в регистратор</value>
+  </data>
+  <data name="Simulator_CarDone" xml:space="preserve">
+    <value>Регистратор записал три ролика. Прошивка в нём: {0}.</value>
+  </data>
+  <data name="Simulator_ConditionsTitle" xml:space="preserve">
+    <value>Условия</value>
+  </data>
+  <data name="Simulator_NeedsAdministrator" xml:space="preserve">
+    <value>Windows не даёт очистить карту без прав администратора</value>
+  </data>
+  <data name="Simulator_AlmostFull" xml:space="preserve">
+    <value>На карте почти нет места</value>
+  </data>
+  <data name="Simulator_SecondDrive" xml:space="preserve">
+    <value>Подключена ещё одна флешка с фотографиями</value>
+  </data>
+  <data name="Simulator_RealDownloads" xml:space="preserve">
+    <value>Скачивать настоящие файлы с сайта Inspector</value>
+  </data>
+  <data name="Simulator_FormatByHand" xml:space="preserve">
+    <value>Отформатировать карту вручную</value>
+  </data>
+  <data name="Simulator_FormatByHandHint" xml:space="preserve">
+    <value>Для случая, когда программа просит отформатировать карту через «Этот компьютер».</value>
+  </data>
+  <data name="Simulator_Folder" xml:space="preserve">
+    <value>Папка симулятора: {0}</value>
+  </data>
+  <data name="Simulator_OpenFolder" xml:space="preserve">
+    <value>Открыть папку</value>
+  </data>
+  <data name="UpdateDownloader_WrongSize" xml:space="preserve">
+    <value>Новая версия скачалась не полностью: {0} байт из {1}. Попробуйте ещё раз.</value>
+    <comment>{0}: bytes received. {1}: bytes expected.</comment>
+  </data>
+  <data name="UpdateDownloader_WrongHash" xml:space="preserve">
+    <value>Скачанный файл не совпал с опубликованным, поэтому запускать его не будем. Попробуйте ещё раз.</value>
+  </data>
+  <data name="CardPage_UpdateAvailable" xml:space="preserve">
+    <value>Вышла новая версия Inspectrol {0}. Обновление займёт пару минут, карту и регистратор оно не затронет.</value>
+    <comment>{0}: new program version.</comment>
+  </data>
+  <data name="CardPage_UpdateButton" xml:space="preserve">
+    <value>Обновить программу</value>
+  </data>
+  <data name="UpdatePage_Header" xml:space="preserve">
+    <value>Новая версия Inspectrol {0}</value>
+    <comment>{0}: new program version.</comment>
+  </data>
+  <data name="UpdatePage_Subheader" xml:space="preserve">
+    <value>Сейчас установлена версия {0}. Программа скачает новую, установит её и откроется снова.</value>
+    <comment>{0}: installed program version.</comment>
+  </data>
+  <data name="UpdatePage_NotesTitle" xml:space="preserve">
+    <value>Что нового</value>
+  </data>
+  <data name="UpdatePage_Install" xml:space="preserve">
+    <value>Обновить</value>
+  </data>
+  <data name="UpdatePage_NotNow" xml:space="preserve">
+    <value>Не сейчас</value>
+  </data>
+  <data name="UpdatePage_Downloading" xml:space="preserve">
+    <value>Скачиваем новую версию…</value>
+  </data>
+  <data name="UpdatePage_Installing" xml:space="preserve">
+    <value>Устанавливаем. Программа закроется и через несколько секунд откроется снова.</value>
+  </data>
+  <data name="UpdatePage_Busy" xml:space="preserve">
+    <value>Скачивается новая версия программы. Дождитесь конца, это недолго.</value>
+  </data>
+  <data name="UpdatePage_Failed" xml:space="preserve">
+    <value>Не получилось скачать новую версию. Проверьте интернет и попробуйте ещё раз.</value>
+  </data>
+  <data name="UpdatePage_Safety" xml:space="preserve">
+    <value>Обновление программы не трогает карту памяти, регистратор и сохранённые записи.</value>
+  </data>
+  <data name="DeviceProcedure_WaitForRebootQuestion" xml:space="preserve">
+    <value>Регистратор перезагрузился?</value>
+  </data>
+  <data name="DeviceProcedure_WaitForRebootIfNot" xml:space="preserve">
+    <value>Обновление может идти долго. Если кажется, что регистратор завис, ждите не меньше двадцати минут.</value>
+    <comment>Followed by DeviceProcedure_DontTouch.</comment>
+  </data>
+  <data name="DeviceProcedure_WaitForRebootGiveUp" xml:space="preserve">
+    <value>Регистратор не перезагрузился. Пока он включён, не вынимайте карту и не глушите двигатель. Если он написал, что обновление не удалось, или перестал включаться, файлы на карте могут понадобиться для восстановления, не стирайте её.</value>
+    <comment>Followed by DeviceProcedure_SupportPage.</comment>
+  </data>
+  <data name="DeviceProcedure_ResetSettingsTitle" xml:space="preserve">
+    <value>Сделайте сброс настроек</value>
+  </data>
+  <data name="DeviceProcedure_ResetSettingsText" xml:space="preserve">
+    <value>Найдите в меню регистратора сброс настроек и выполните его. После смены прошивки он нужен, иначе часть настроек может работать неправильно.</value>
+  </data>
+  <data name="DeviceProcedure_ResetSettingsQuestion" xml:space="preserve">
+    <value>Получилось сбросить настройки?</value>
+  </data>
+  <data name="DeviceProcedure_ResetSettingsIfNot" xml:space="preserve">
+    <value>Этого пункта может не быть на виду, тогда загляните в инструкцию к регистратору. Обновление к этому моменту уже установлено, и сброс можно пропустить.</value>
+  </data>
+  <data name="DeviceProcedure_CheckVersionTitle" xml:space="preserve">
+    <value>Проверьте версию прошивки</value>
+  </data>
+  <data name="DeviceProcedure_CheckVersionText" xml:space="preserve">
+    <value>Откройте последний пункт меню регистратора. Там должна быть написана версия {0}.</value>
+    <comment>{0}: expected firmware version, e.g. 1.0.5.</comment>
+  </data>
+  <data name="DeviceProcedure_CheckVersionQuestion" xml:space="preserve">
+    <value>Там написано {0}?</value>
+    <comment>{0}: expected firmware version, e.g. 1.0.5.</comment>
+  </data>
+  <data name="DeviceProcedure_CheckVersionIfNot" xml:space="preserve">
+    <value>Посмотрите внимательно: версия пишется цифрами через точку. Если там по-прежнему старая, значит прошивка не встала.</value>
+  </data>
+  <data name="DeviceProcedure_CheckVersionGiveUp" xml:space="preserve">
+    <value>Прошивка {0} не установилась. Регистратор остался на прежней версии, и пользоваться им можно.</value>
+    <comment>{0}: expected firmware version, e.g. 1.0.5. Followed by DeviceProcedure_SupportPage.</comment>
+  </data>
+  <data name="DeviceProcedure_CheckDeviceWorksTitle" xml:space="preserve">
+    <value>Проверьте, что регистратор работает</value>
+  </data>
+  <data name="DeviceProcedure_CheckDeviceWorksText" xml:space="preserve">
+    <value>Посмотрите на экран регистратора: он должен работать и вести запись, как обычно.</value>
+  </data>
+  <data name="DeviceProcedure_CheckDeviceWorksQuestion" xml:space="preserve">
+    <value>Регистратор работает как обычно?</value>
+  </data>
+  <data name="DeviceProcedure_CheckDeviceWorksIfNot" xml:space="preserve">
+    <value>Подождите минуту: после обновления регистратор может загружаться дольше обычного.</value>
+  </data>
+  <data name="DeviceProcedure_CheckDeviceWorksGiveUp" xml:space="preserve">
+    <value>Регистратор работает не как обычно. Не стирайте карту, файлы на ней могут понадобиться.</value>
+    <comment>Followed by DeviceProcedure_SupportPage.</comment>
+  </data>
+  <data name="DeviceProcedure_CardBackToComputerTitle" xml:space="preserve">
+    <value>Верните карту в компьютер</value>
+  </data>
+  <data name="DeviceProcedure_CardBackToComputerText" xml:space="preserve">
+    <value>Это был заход {0} из {1}. Регистратор закончил, теперь можно заглушить двигатель. Выньте карту из регистратора и вставьте её обратно в компьютер. Программа продолжит с новой версии прошивки.</value>
+    <comment>{0}: number of this card pass. {1}: number of card passes in the plan.</comment>
+  </data>
+  <data name="DeviceProcedure_CardBackToComputerQuestion" xml:space="preserve">
+    <value>Карта снова в компьютере?</value>
+  </data>
+  <data name="DeviceProcedure_CardBackToComputerIfNot" xml:space="preserve">
+    <value>Карту вынимайте, когда регистратор выключен. Вставьте её в тот же разъём или переходник, что в прошлый раз.</value>
+  </data>
+  <data name="UpdatePlanner_UnclearRequirement" xml:space="preserve">
+    <value>На странице {0} Inspector написал условие про версию прошивки, а программа его не поняла. Обновите Inspectrol или откройте страницу на rd-inspector.ru и прочитайте условие сами.</value>
+    <comment>{0}: UpdatePlanner_UnclearRequirementDatabase or UpdatePlanner_UnclearRequirementFirmware (genitive case).</comment>
+  </data>
+  <data name="UpdatePlanner_UnclearRequirementDatabase" xml:space="preserve">
+    <value>базы камер</value>
+  </data>
+  <data name="UpdatePlanner_UnclearRequirementFirmware" xml:space="preserve">
+    <value>прошивки</value>
+  </data>
+  <data name="UpdatePlanner_FirmwareOnlyModel" xml:space="preserve">
+    <value>Для этой модели Inspector выкладывает только прошивку, базы камер у неё нет.</value>
+    <comment>Followed by UpdatePlanner_ChooseFirmwareTier or UpdatePlanner_NothingToUpdate.</comment>
+  </data>
+  <data name="UpdatePlanner_DatabaseNeedsNewerFirmware" xml:space="preserve">
+    <value>Для этой базы нужна прошивка {0} или новее, а на устройстве {1}.</value>
+    <comment>{0}: firmware version the database requires. {1}: firmware version on the device.</comment>
+  </data>
+  <data name="UpdatePlanner_FirmwareVersionUnknown" xml:space="preserve">
+    <value>Inspector выложил для этой модели прошивку, но не написал в названии её версию, поэтому программа не может понять, новее она установленной или нет. Откройте страницу модели на rd-inspector.ru и сверьте версию сами.</value>
+  </data>
+  <data name="UpdatePlanner_FirmwareOnForeignSite" xml:space="preserve">
+    <value>Файл прошивки для этой модели лежит на сайте другого бренда. Программа скачивает файлы только с сервера Inspector, поэтому откройте страницу модели на rd-inspector.ru и скачайте его оттуда.</value>
+  </data>
+  <data name="UpdatePlanner_DatabaseNeedsFirmwareNewerThanLatest" xml:space="preserve">
+    <value>Для этой базы нужна прошивка {0} или новее, а самая свежая прошивка у Inspector {1}.</value>
+    <comment>{0}: firmware version the database requires. {1}: latest published firmware version.</comment>
+  </data>
+  <data name="UpdatePlanner_NoBridgeFirmware" xml:space="preserve">
+    <value>В архиве Inspector нет промежуточной прошивки {0} для перехода с версии {1}.</value>
+    <comment>{0}: minimum firmware version the latest firmware requires. {1}: firmware version on the device.</comment>
+  </data>
+  <data name="UpdatePlanner_BridgeFirmwareStep" xml:space="preserve">
+    <value>Промежуточная прошивка {0}</value>
+    <comment>{0}: intermediate firmware version.</comment>
+  </data>
+  <data name="UpdatePlanner_PartFirmware" xml:space="preserve">
+    <value>прошивка {0}</value>
+    <comment>Part of a card pass title. {0}: firmware version.</comment>
+  </data>
+  <data name="UpdatePlanner_PartDatabase" xml:space="preserve">
+    <value>база камер от {0:dd.MM.yyyy}</value>
+    <comment>Part of a card pass title. {0}: date of the camera database.</comment>
+  </data>
+  <data name="UpdatePlanner_PartUndatedDatabase" xml:space="preserve">
+    <value>база камер</value>
+    <comment>Part of a card pass title, used when the database title has no date.</comment>
+  </data>
+  <data name="UpdatePlanner_PartEMap" xml:space="preserve">
+    <value>карты eMap</value>
+    <comment>Part of a card pass title.</comment>
+  </data>
+  <data name="UpdatePlanner_TwoParts" xml:space="preserve">
+    <value>{0} и {1}</value>
+    <comment>Card pass title from two parts. The first letter is capitalised in code.</comment>
+  </data>
+  <data name="UpdatePlanner_ThreeParts" xml:space="preserve">
+    <value>{0}, {1} и {2}</value>
+    <comment>Card pass title from three parts. The first letter is capitalised in code.</comment>
+  </data>
+  <data name="UpdatePlanner_NothingSelected" xml:space="preserve">
+    <value>Отметьте, что нужно обновить.</value>
+  </data>
+  <data name="UpdatePlanner_NoFirmware" xml:space="preserve">
+    <value>Inspector не выкладывает прошивку для этой модели.</value>
+  </data>
+  <data name="UpdatePlanner_NoEMap" xml:space="preserve">
+    <value>Для этой модели нет карт eMap.</value>
+  </data>
+  <data name="UpdatePlanner_FirmwareAlreadyLatest" xml:space="preserve">
+    <value>В регистраторе уже стоит прошивка {0}, новее у Inspector нет.</value>
+    <comment>{0}: latest firmware version.</comment>
+  </data>
+  <data name="UpdatePlanner_SelectFirmwareToo" xml:space="preserve">
+    <value>Отметьте и прошивку, тогда база встанет сразу после неё.</value>
+    <comment>Appended to UpdatePlanner_DatabaseNeedsNewerFirmware when the latest firmware can be installed.</comment>
+  </data>
+  <data name="UpdatePlanner_OptionDatabaseNeedsFirmware" xml:space="preserve">
+    <value>Этой базе нужна прошивка {0} или новее, а в регистраторе {1}. Её можно поставить только вместе с прошивкой.</value>
+    <comment>{0}: firmware version the database requires. {1}: firmware version on the dashcam.</comment>
+  </data>
+  <data name="UpdatePlanner_OptionFirmwareChain" xml:space="preserve">
+    <value>Сначала встанет промежуточная прошивка {0}, потом {1}. Карту придётся вставлять в регистратор два раза.</value>
+    <comment>{0}: intermediate firmware version. {1}: latest firmware version.</comment>
+  </data>
+</root>

@@ -1,0 +1,133 @@
+<Window x:Class="Inspectrol.App.Simulator.SimulatorWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:text="clr-namespace:Inspectrol.Core;assembly=Inspectrol.Core"
+        Title="{x:Static text:Strings.Simulator_WindowTitle}"
+        Width="380"
+        Height="720"
+        MinWidth="320"
+        FontSize="14"
+        Icon="/Assets/inspectrol.ico"
+        ShowInTaskbar="False">
+
+    <ScrollViewer Background="{DynamicResource SolidBackgroundFillColorBaseBrush}" VerticalScrollBarVisibility="Auto">
+        <StackPanel Margin="16">
+            <TextBlock FontSize="20" FontWeight="SemiBold" Text="{x:Static text:Strings.Simulator_Header}" />
+            <TextBlock Margin="0,6,0,14"
+                       Style="{StaticResource SecondaryText}"
+                       Text="{x:Static text:Strings.Simulator_Intro}"
+                       TextWrapping="Wrap" />
+
+            <Border Margin="0,0,0,12" Style="{StaticResource Card}">
+                <StackPanel>
+                    <TextBlock FontSize="15" FontWeight="SemiBold" Text="{x:Static text:Strings.Simulator_CardTitle}" />
+                    <TextBlock x:Name="CardStateText" Margin="0,4,0,0" TextWrapping="Wrap" />
+                    <TextBlock x:Name="CardContentsText"
+                               Margin="0,2,0,0"
+                               Style="{StaticResource SecondaryText}"
+                               TextWrapping="Wrap" />
+                    <WrapPanel Margin="0,10,0,0">
+                        <Button x:Name="InsertButton"
+                                Margin="0,0,8,0"
+                                Click="OnInsertClick"
+                                Content="{x:Static text:Strings.Simulator_Insert}"
+                                Style="{DynamicResource PrimaryStepButton}" />
+                        <Button x:Name="RemoveButton"
+                                Click="OnRemoveClick"
+                                Content="{x:Static text:Strings.Simulator_Remove}"
+                                Style="{DynamicResource StepButton}" />
+                    </WrapPanel>
+                </StackPanel>
+            </Border>
+
+            <Border Margin="0,0,0,12" Style="{StaticResource Card}">
+                <StackPanel x:Name="ContentPanel">
+                    <TextBlock FontSize="15" FontWeight="SemiBold" Text="{x:Static text:Strings.Simulator_ContentTitle}" />
+                    <TextBlock Margin="0,2,0,8"
+                               Style="{StaticResource SecondaryText}"
+                               Text="{x:Static text:Strings.Simulator_ContentHint}"
+                               TextWrapping="Wrap" />
+                    <RadioButton x:Name="RecordingsOption" Checked="OnSettingChanged" Content="{x:Static text:Strings.Simulator_ContentRecordings}" GroupName="Content" />
+                    <RadioButton x:Name="EmptyOption" Checked="OnSettingChanged" Content="{x:Static text:Strings.Simulator_ContentEmpty}" GroupName="Content" />
+                    <RadioButton x:Name="UpdateFilesOption" Checked="OnSettingChanged" Content="{x:Static text:Strings.Simulator_ContentUpdateFiles}" GroupName="Content" />
+                    <RadioButton x:Name="PhotosOption" Checked="OnSettingChanged" Content="{x:Static text:Strings.Simulator_ContentPhotos}" GroupName="Content" />
+
+                    <TextBlock Margin="0,12,0,4" Text="{x:Static text:Strings.Simulator_DashcamLabel}" />
+                    <ComboBox x:Name="DashcamBox" SelectionChanged="OnSettingChanged" />
+
+                    <TextBlock Margin="0,10,0,4" Text="{x:Static text:Strings.Simulator_FirmwareLabel}" />
+                    <TextBox x:Name="FirmwareBox" TextChanged="OnSettingChanged" />
+                    <TextBlock x:Name="FirmwareHint"
+                               Margin="0,4,0,0"
+                               Foreground="{DynamicResource SystemFillColorCautionBrush}"
+                               Text="{x:Static text:Strings.Simulator_FirmwareHint}"
+                               Visibility="Collapsed" />
+
+                    <TextBlock Margin="0,10,0,4" Text="{x:Static text:Strings.Simulator_SizeLabel}" />
+                    <ComboBox x:Name="SizeBox" SelectionChanged="OnSettingChanged" />
+                </StackPanel>
+            </Border>
+
+            <Border Margin="0,0,0,12" Style="{StaticResource Card}">
+                <StackPanel>
+                    <TextBlock FontSize="15" FontWeight="SemiBold" Text="{x:Static text:Strings.Simulator_CarTitle}" />
+                    <TextBlock Margin="0,2,0,8"
+                               Style="{StaticResource SecondaryText}"
+                               Text="{x:Static text:Strings.Simulator_CarText}"
+                               TextWrapping="Wrap" />
+                    <CheckBox x:Name="InstallsUpdateBox" IsChecked="True">
+                        <TextBlock Text="{x:Static text:Strings.Simulator_CarInstalls}" TextWrapping="Wrap" />
+                    </CheckBox>
+                    <Button x:Name="DashcamButton"
+                            Margin="0,10,0,0"
+                            HorizontalAlignment="Left"
+                            Click="OnDashcamClick"
+                            Content="{x:Static text:Strings.Simulator_CarRun}"
+                            Style="{DynamicResource StepButton}" />
+                    <TextBlock x:Name="DashcamResultText"
+                               Margin="0,8,0,0"
+                               Style="{StaticResource SecondaryText}"
+                               TextWrapping="Wrap" />
+                </StackPanel>
+            </Border>
+
+            <Border Margin="0,0,0,12" Style="{StaticResource Card}">
+                <StackPanel>
+                    <TextBlock FontSize="15" FontWeight="SemiBold" Text="{x:Static text:Strings.Simulator_ConditionsTitle}" />
+                    <CheckBox x:Name="AdministratorBox" Margin="0,8,0,0" Click="OnConditionClick">
+                        <TextBlock Text="{x:Static text:Strings.Simulator_NeedsAdministrator}" TextWrapping="Wrap" />
+                    </CheckBox>
+                    <CheckBox x:Name="AlmostFullBox" Margin="0,6,0,0" Click="OnConditionClick">
+                        <TextBlock Text="{x:Static text:Strings.Simulator_AlmostFull}" TextWrapping="Wrap" />
+                    </CheckBox>
+                    <CheckBox x:Name="SecondDriveBox" Margin="0,6,0,0" Click="OnConditionClick">
+                        <TextBlock Text="{x:Static text:Strings.Simulator_SecondDrive}" TextWrapping="Wrap" />
+                    </CheckBox>
+                    <CheckBox x:Name="RealDownloadsBox" Margin="0,6,0,0" Click="OnConditionClick">
+                        <TextBlock Text="{x:Static text:Strings.Simulator_RealDownloads}" TextWrapping="Wrap" />
+                    </CheckBox>
+                    <Button x:Name="FormatButton"
+                            Margin="0,12,0,0"
+                            HorizontalAlignment="Left"
+                            Click="OnFormatClick"
+                            Content="{x:Static text:Strings.Simulator_FormatByHand}"
+                            Style="{DynamicResource StepButton}" />
+                    <TextBlock Margin="0,4,0,0"
+                               Style="{StaticResource SecondaryText}"
+                               Text="{x:Static text:Strings.Simulator_FormatByHandHint}"
+                               TextWrapping="Wrap" />
+                </StackPanel>
+            </Border>
+
+            <TextBlock x:Name="FolderText"
+                       FontSize="12"
+                       Style="{StaticResource SecondaryText}"
+                       TextWrapping="Wrap" />
+            <Button Margin="0,6,0,0"
+                    HorizontalAlignment="Left"
+                    Click="OnOpenFolderClick"
+                    Content="{x:Static text:Strings.Simulator_OpenFolder}"
+                    Style="{DynamicResource StepButton}" />
+        </StackPanel>
+    </ScrollViewer>
+</Window>

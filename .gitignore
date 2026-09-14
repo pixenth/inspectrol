@@ -1,0 +1,16 @@
+# .NET build output
+bin/
+obj/
+[Dd]ebug/
+[Rr]elease/
+*.user
+*.suo
+
+# Release builds and installers (build/release.ps1)
+artifacts/
+
+# Visual Studio
+.vs/
+
+# Other
+*.log
